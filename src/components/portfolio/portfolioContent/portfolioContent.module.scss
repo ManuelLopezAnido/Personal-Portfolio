@@ -1,0 +1,13 @@
+.portfolioContent{
+  width: 80%;
+  height: 90%;
+  border: solid black 1px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text{
+    width: 90%;
+    height: 90%;
+  }
+}

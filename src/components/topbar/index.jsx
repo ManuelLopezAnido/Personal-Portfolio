@@ -1,9 +1,10 @@
 import styles from './topbar.module.scss'
 import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
-const topbar = ()=>{
+
+const Topbar = (props)=>{
   return (
-    <div className={styles.topbar}>
+    <div className={`${styles.topbar} ${props.barActive && styles.topbarActive}`}>
       <div className={styles.wrapper}>
         <div className= {styles.left}>
           <a href={'#intro'} className={styles.logo}>
@@ -26,7 +27,7 @@ const topbar = ()=>{
           centro
         </>
         <div className= {styles.right}>
-          <div className={styles.hamburger}>
+          <div className={styles.hamburger} onClick = {() => {props.setBarActive(!props.barActive)} } >
             <span className={styles.line1}> </span>
             <span className={styles.line2}> </span>
             <span className={styles.line3}> </span>
@@ -36,4 +37,4 @@ const topbar = ()=>{
     </div>
   )
 }
-export default topbar
+export default Topbar
