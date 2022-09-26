@@ -26,6 +26,11 @@
         display: flex;
         justify-content: center;
         margin-left: 60px;
+
+        @include mobile {
+          display: none;
+        }
+
         .icon{
           font-size: 18px;
           margin-right: 5px;

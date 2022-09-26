@@ -9,6 +9,10 @@
 
   h1{
     font-size: 2.1em;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   ul{
@@ -16,6 +20,14 @@
     padding: 0;
     list-style: none;
     display: flex;
+
+    @include mobile {
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center; 
+      margin: 0;
+    }
+
   }
   .container{
     width: 100%;
@@ -24,11 +36,20 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+      width: 100%; 
+    }
+
     .item{
       width: 80%;
       height: 90%;
       border: solid black 1px;
       border-radius: 20px;
+
+      @include mobile {
+        width: 130px;
+        height: 120px; 
+      }
     }
   }
 }

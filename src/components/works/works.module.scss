@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .works{
   background-color: crimson;
   display: flex;
@@ -9,6 +11,10 @@
     width: 60px;
     position: absolute;
     cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
 
     &.left{
       transform: rotateZ(90deg);
@@ -25,6 +31,12 @@
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .container {
       width: 100vw;
@@ -44,6 +56,13 @@
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
         
+        @include mobile {
+          width: 90%;
+          height: 180px;
+          margin: 5px 0;
+        }
+
+
         .left{
           flex: 4;
           height: 100%;
