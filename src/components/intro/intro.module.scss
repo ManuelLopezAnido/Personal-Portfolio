@@ -13,6 +13,11 @@
     flex:0.5;
     overflow: hidden;
 
+    @include mobile {
+      
+     
+    }
+
     .imgContainer{
       width: 700px;
       height: 700px;
@@ -25,12 +30,16 @@
 
       @include mobile {
         align-items: flex-start;
+        width: 400px;
+        height: 400px;
       }
       
       img{
-        height: 90%;
+        margin-left: -70px;
+        height: 105%;
         @include mobile {
-          height: 50%;
+          margin-left: 0px;
+          height: 120%;
         }
       }
     }
@@ -48,7 +57,9 @@
       justify-content: center;
 
       @include mobile {
+        justify-content: start;
         padding-left:  0;
+        padding-top: 10%;
         align-items: center;
       }
       h1{
@@ -56,7 +67,7 @@
         margin: 10px 0;
         
         @include mobile {
-          font-style: 40px;
+          font-size: 40px;
         }
         
       }

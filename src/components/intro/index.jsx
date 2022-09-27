@@ -19,7 +19,7 @@ const Intro = ()=>{
     <div className={styles.intro} id={'intro'}>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
-          <img src={'assets/man.png'} alt={''}/>
+          <img src={'assets/manu2Pic.png'} alt={''}/>
 
          
         </div>
