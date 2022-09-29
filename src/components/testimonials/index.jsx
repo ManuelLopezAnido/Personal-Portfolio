@@ -12,13 +12,15 @@ const testimonials = ()=>{
       feature: false
     },
     {
+      name: 'Richard Mitchell',
       feature: false
     },
     {
+      name: 'Walter San Marco',
       feature: false
     },
     {
-      
+      name: 'Ariel Goldbarg',
     }
   ]
   return (
@@ -28,7 +30,7 @@ const testimonials = ()=>{
         {
           data.map((person)=>{
             return(
-              <div className={person.feature ? `${styles.card} ${styles.featured} ` : styles.card }>
+              <div key={person.name} className={person.feature ? `${styles.card} ${styles.featured} ` : styles.card }>
                 <div className={styles.top}>
                   <img src={'assets/right-arrow.png'} alt={''} className={styles.left}/>
                   <img src={'assets/' + person.image } alt={''} className={styles.user}/>

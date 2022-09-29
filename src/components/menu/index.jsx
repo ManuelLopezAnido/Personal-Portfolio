@@ -1,8 +1,10 @@
 import styles from './menu.module.scss'
 
 const Menu = (props) => {
+
   return(
-    <div className = {`${styles.menu} ${(props.barActive ? styles.active : '' )}`}>
+    <div
+      className = {`${styles.menu} ${(props.barActive ? styles.active : '' )}`}>
       <ul>
         <li onClick = {()=>{props.setBarActive(false)}}>
           <a href='#intro'>
