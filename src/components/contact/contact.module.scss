@@ -6,6 +6,7 @@
 
   @include mobile {
     flex-direction: column;
+    scroll-snap-align: none !important
   }
 
   .left{
