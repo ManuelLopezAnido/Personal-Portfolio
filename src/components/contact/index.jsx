@@ -53,16 +53,14 @@ const Contact = ()=>{
           Contact.
         </h2>
         <form 
-          // action="https://public.herotofu.com/v1/56db7ef0-4020-11ed-a06d-cdea678ac864" 
-          // method="POST"
           onSubmit={handleSubmit} 
         >
             <input type='text' placeholder='Email' name='email'/>
             <textarea placeholder='Message' name='message'></textarea>
             <button type='submit'>Send</button>
-            {messege && <span> Thanks, I'll reply as soon as posible </span>}
-            {errorMessage && <span> Ups </span>}
-            {loading && <span> Loading </span>}            
+            {messege && <span className={styles.ok}> Thanks, I'll reply as soon as posible </span>}
+            {errorMessage && <span className={styles.error}> Sorry, something went wrong. <br/> Contact email: manuellopezanido@gmail.com</span>}
+            {loading && <span className={styles.loading}> Loading... </span>}            
         </form>
       </div>
     </div>

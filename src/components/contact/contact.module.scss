@@ -70,9 +70,19 @@
           outline: none;
         }
       }
-      span {
+      .ok {
         color: green;
+        font-weight: bold;
       }
+      .loading{
+        color: rgb(131, 131, 3);
+        font-weight: bold;
+      }
+      .error{
+        color: red;
+        font-weight: bold;
+      }
+      
     }
   }
 }

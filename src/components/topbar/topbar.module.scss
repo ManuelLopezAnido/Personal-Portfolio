@@ -25,7 +25,12 @@
       .itemContainer{
         display: flex;
         justify-content: center;
-        margin-left: 60px;
+        margin-left: 40px;
+
+        a{
+          text-decoration: none;
+          color:inherit;
+        }
 
         @include mobile {
           display: none;
@@ -38,6 +43,25 @@
         span{
           font-size: 15px;
           font-weight: 500;
+        }
+      }
+      .itemContainerSocial{
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+
+        a{
+          text-decoration: none;
+          color:inherit;
+        }
+
+        @include mobile {
+          display: none;
+        }
+
+        .icon{
+          font-size: 20px;
+          margin-right: 5px;
         }
       }
     }

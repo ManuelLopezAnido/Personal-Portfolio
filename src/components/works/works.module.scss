@@ -7,8 +7,20 @@
   justify-content: center;
   position: relative;
 
+  .title{
+    position: absolute;
+    top: 5px;
+
+    h1{
+      font-size: 2.1em;
+      @include mobile {
+      font-size: 1.9em;
+    }
+    }
+  }
+  
   .arrow{
-    width: 60px;
+    width: 70px;
     position: absolute;
     cursor: pointer;
 
