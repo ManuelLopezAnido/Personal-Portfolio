@@ -17,14 +17,21 @@ const Works = ()=>{
       icon: "",
       title: "Imagen 2",
       desc: "loren ipsum mate",
-      img: "assets/lilianaPlanta.jpg"
+      img: "assets/lilianaArmado.jpeg"
     },
     {  
       id: "3",
       icon: "",
       title: "Imagen 3",
       desc: "loren ipsum mate",
-      img: "assets/lilianaCajas.jpg"
+      img: "assets/lilianaInyeccion.jpeg"
+    },
+    {  
+      id: "4",
+      icon: "",
+      title: "Imagen ",
+      desc: "loren ipsum mate",
+      img: "assets/lilianaDepositos.jpeg"
     }
   ]
   const handleClick = (type) =>{
@@ -49,14 +56,18 @@ const Works = ()=>{
                   {/* <img src={d.img} alt={d.title}></img> */}
                   <div className={styles.left}>
                     <div className={styles.leftContainer}>
-                      <div className={styles.imgContainer}>
-                        {/* <img src={'#'} alt='.'> </img> */}
-                      </div>
+                      {/* <div className={styles.imgContainer}>
+                        <img src={'#'} alt='.'> </img>
+                      </div> */}
                       <h2>{d.title}</h2>
                       <p>
                         {d.desc}
                       </p>
-                      <span>Projects</span>
+                      <a href={'https://www.liliana.com.ar/'} target={'_blank'} rel={'noreferrer'}>
+                        <span>
+                          Liliana
+                        </span>
+                      </a>
                     </div>
                   </div>
                   <div className={styles.right}>

@@ -6,58 +6,64 @@ const Testimonials = ()=>{
   const data = [
     {
       name: 'Heraldo Gerber',
-      position: 'Liliana IT Manager',
+      position: 'Liliana\'s IT Manager',
       image: 'heraldo.jpg',
       email: 'hgerber@liliana.com.ar',
       linkedin: 'https://www.linkedin.com/in/heraldogerber/',
       feature: false,
       testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-                    '  Numquam odio animi debitis repellendus ' +
-                    'cumque officia provident quo accusamus.',
+                    '  Numquam odio animi debitis repellendus ' 
     },
+    // {
+    //   name: 'Richard Mitchell',
+    //   position: 'Liliana\'s CEO',
+    //   image: 'richard.jpg',
+    //   email: 'mitchell@liliana.com.ar',
+    //   linkedin: 'https://www.linkedin.com/in/richard-mitchell-b23283127/',
+    //   feature: false,
+    //   testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
+    //                 '  Numquam odio animi debitis repellendus ' 
+    // },
     {
-      name: 'Richard Mitchell',
-      position: 'Liliana CEO',
-      image: 'richard.jpg',
-      email: 'mitchell@liliana.com.ar',
-      linkedin: 'https://www.linkedin.com/in/richard-mitchell-b23283127/',
+      name: 'Vanina Pintos',
+      position: 'Liliana\'s Production Manger',
+      image:'vanina.jpg',
+      email: 'vpintos@liliana.com.ar ',
+      linkedin: 'https://www.linkedin.com/in/vanina-pintos-66ab3418/',
       feature: false,
       testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-                    '  Numquam odio animi debitis repellendus ' +
-                    'cumque officia provident quo accusamus.',
+                    '  Numquam odio animi debitis repellendus ' 
     },
     {
       name: 'Walter San Marco',
-      position: 'Liliana Planning and production manger',
+      position: 'Liliana\'s Planning Manger',
       image:'walter.jpg',
       email: 'walter.sanmarco@gmail.com',
       linkedin: 'https://www.linkedin.com/in/walter-sanmarco-88b25511a/',
       feature: false,
       testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-                    '  Numquam odio animi debitis repellendus ' +
-                    'cumque officia provident quo accusamus.',
+                    '  Numquam odio animi debitis repellendus ' 
     },
     {
       name: 'Ariel Goldbarg',
-      position: 'Goldvarg consultant CEO and founder',
+      position: 'Goldvarg Consultant\'s CEO',
       image: 'ariel.jpg',
       email: 'ariel@goldvarg.com.ar',
       linkedin: 'https://www.linkedin.com/in/arielgoldvarg/',
       feature: false,
       testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-                    '  Numquam odio animi debitis repellendus ' +
-                    'cumque officia provident quo accusamus.',
+                    '  Numquam odio animi debitis repellendus '
     }
   ]
   const emailCopied = (email) =>{
+    navigator.clipboard.writeText(email).then();
     setEmail(true)
-    navigator.clipboard.writeText(email);
     setTimeout(()=>{setEmail(false)},5000)
   }
   return (
     <div className={styles.testimonials} id={'testimonials'}>
       <div className={email ? styles.emailCopied : styles.nonVisibile}> 
-        Copied 
+        Email copied 
       </div>
       <h1> Testimonials </h1>
       <div className={styles.container}>
@@ -67,7 +73,7 @@ const Testimonials = ()=>{
               <div key={person.name} className={person.feature ? `${styles.card} ${styles.featured} ` : styles.card }>
                 <div className={styles.top}>
                   <img 
-                    src={'assets/right-arrow.png'} 
+                    src={'assets/emailLogo2.png'} 
                     alt={''} 
                     className={styles.left}
                     onClick={()=>emailCopied(person.email)}

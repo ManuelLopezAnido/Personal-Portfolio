@@ -22,7 +22,7 @@ const Topbar = (props)=>{
               0341 153 240353
             </span>
           </div>
-          <div className={styles.itemContainer}>
+          <div className= {styles.itemContainer}>
             <EmailIcon className={styles.icon}/>
             <span>
               <a href = 'mailto:manuellopezanido@gmail.com'>
@@ -30,7 +30,15 @@ const Topbar = (props)=>{
               </a>
             </span>
           </div>
-          <div className={styles.itemContainer}>
+          <div className= {`${styles.itemContainer} ${styles.email}`}>
+            <EmailIcon className={styles.icon}/>
+            <span>
+              <a href = 'mailto:manuellopezanido@gmail.com'>
+                Email
+              </a>
+            </span>
+          </div>
+          <div className= {`${styles.itemContainer} ${styles.cv}`}>
             <ContactPageIcon className={styles.icon}/>
             <span>
               <a href={'assets/CVManuelLopezAnido.pdf'} rel={'noreferrer'} target={'_blank'} >
