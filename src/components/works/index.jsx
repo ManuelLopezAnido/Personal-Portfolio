@@ -17,7 +17,7 @@ const Works = ()=>{
       icon: "",
       title: "Imagen 2",
       desc: "loren ipsum mate",
-      img: "assets/lilianaArmado.jpeg"
+      img: "assets/lilianaArmado.jpg"
     },
     {  
       id: "3",

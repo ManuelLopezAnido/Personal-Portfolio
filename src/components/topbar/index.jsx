@@ -14,7 +14,7 @@ const Topbar = (props)=>{
       <div className={styles.wrapper}>
         <div className= {styles.left}>
           <a href={'#intro'} className={styles.logo}>
-            Home
+            Portfolio
           </a>
           <div className={styles.itemContainer}>
             <PersonIcon className={styles.icon}/>

@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .works{
-  background-color: crimson;
+  background-color: $background;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,6 +12,7 @@
     top: 5px;
 
     h1{
+      color: white;
       font-size: 2.1em;
       @include mobile {
       font-size: 1.9em;
