@@ -1,16 +1,16 @@
-$mainColor: #0C1921;
-$developer: #F61A27;
-$button: #F61A27;
-$background: #0C1921;
-//$background: crimson;
-//$background: #0C1921;
-$circle: #F7BD3E;
-$circle: rgb(144,238,144);
+$mainColor: rgb(0,26,47);
+$developer: rgb(237,24,71);
+$button: rgb(237,24,71);
+$background: rgb(0,26,47);
+$circle: rgb(254,213,4);
+$circle: rgb(255,196,18);
+// $circle: rgb(255,205,0);
+//$circle: rgb(144,238,144);
 $width: 750px;
 
-  // main color:#15023a*** redBull:#0C1921 
+  // main color:#15023a*** redBull 1: 12,25,33 redBull2: 0,26,47 
   // background: 
-  // letters: #F61A27
+  // letters: #246 29 39:  237 24 71
   // circle: rgb(144,238,144); redBull#E8C563
 
 @mixin mobile {
