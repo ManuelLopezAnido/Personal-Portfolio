@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styles from './portfolio.module.scss'
 import PortfolioContent from './portfolioContent'
 import PortfolioList from './portfolioList'
-
+import Fade from 'react-reveal/Fade';
 const Portfolio = () => {
 
   const [selected, setSelected] = useState('aboutme') 
@@ -36,32 +36,34 @@ const Portfolio = () => {
   ]
 
   return (
-    <div className={styles.portfolio} id={'portfolio'}>
-      <h1>
-        Personal Information
-      </h1>
-      <ul>
-        {
-          list.map((element) => {
-            return (
-              <PortfolioList 
-                title = {element.title} 
-                active={selected === element.id} 
-                setSelected={setSelected}
-                id={element.id}
-                key={element.id}
-              />
-            )
-          })
-        } 
-      </ul>
-      <div className={styles.container}>
-        <PortfolioContent 
-          selected={selected}
-          content = {list.find(item=>item.id===selected).content}
-        />
+    <Fade>
+      <div className={styles.portfolio} id={'portfolio'}>
+        <h1>
+          Personal Information
+        </h1>
+        <ul>
+          {
+            list.map((element) => {
+              return (
+                <PortfolioList 
+                  title = {element.title} 
+                  active={selected === element.id} 
+                  setSelected={setSelected}
+                  id={element.id}
+                  key={element.id}
+                />
+              )
+            })
+          } 
+        </ul>
+        <div className={styles.container}>
+          <PortfolioContent 
+            selected={selected}
+            content = {list.find(item=>item.id===selected).content}
+          />
+        </div>
       </div>
-    </div>
+    </Fade>
   )
 }
 export default Portfolio

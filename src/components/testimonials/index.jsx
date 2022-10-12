@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './testimonials.module.scss'
-
+import Fade from 'react-reveal/Fade';
 const Testimonials = ()=>{
   const [email, setEmail] = useState(false)
   const data = [
@@ -61,45 +61,47 @@ const Testimonials = ()=>{
     setTimeout(()=>{setEmail(false)},5000)
   }
   return (
-    <div className={styles.testimonials} id={'testimonials'}>
-      <div className={email ? styles.emailCopied : styles.nonVisibile}> 
-        Email copied 
+    <Fade>
+      <div className={styles.testimonials} id={'testimonials'}>
+        <div className={email ? styles.emailCopied : styles.nonVisibile}> 
+          Email copied 
+        </div>
+        <h1> Testimonials </h1>
+        <div className={styles.container}>
+          {
+            data.map((person)=>{
+              return(
+                <div key={person.name} className={person.feature ? `${styles.card} ${styles.featured} ` : styles.card }>
+                  <div className={styles.top}>
+                    <img 
+                      src={'assets/emailLogo2.png'} 
+                      alt={''} 
+                      className={styles.left}
+                      onClick={()=>emailCopied(person.email)}
+                    />
+                    <img src={'assets/' + person.image } alt={''} className={styles.user}/>
+                    <a href={person.linkedin} rel={'noreferrer'} target={'_blank'}>
+                      <img src={'assets/linkedin.png'} alt={''} className={styles.right}/>
+                    </a>
+                  </div>
+                  <div className={styles.center}>
+                    {person.testimonial}
+                  </div>
+                  <div className={styles.bottom}>
+                    <h3>
+                      {person.name}
+                    </h3>
+                    <h4>
+                      {person.position} 
+                    </h4>
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
       </div>
-      <h1> Testimonials </h1>
-      <div className={styles.container}>
-        {
-          data.map((person)=>{
-            return(
-              <div key={person.name} className={person.feature ? `${styles.card} ${styles.featured} ` : styles.card }>
-                <div className={styles.top}>
-                  <img 
-                    src={'assets/emailLogo2.png'} 
-                    alt={''} 
-                    className={styles.left}
-                    onClick={()=>emailCopied(person.email)}
-                  />
-                  <img src={'assets/' + person.image } alt={''} className={styles.user}/>
-                  <a href={person.linkedin} rel={'noreferrer'} target={'_blank'}>
-                    <img src={'assets/linkedin.png'} alt={''} className={styles.right}/>
-                  </a>
-                </div>
-                <div className={styles.center}>
-                  {person.testimonial}
-                </div>
-                <div className={styles.bottom}>
-                  <h3>
-                    {person.name}
-                  </h3>
-                  <h4>
-                    {person.position} 
-                  </h4>
-                </div>
-              </div>
-            )
-          })
-        }
-      </div>
-    </div>
+    </Fade>
   )
 }
 export default Testimonials

@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import styles from './contact.module.scss'
+import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
+
 const Contact = ()=>{
   const [messege, setMessege] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -45,24 +48,28 @@ const Contact = ()=>{
 
   return (
     <div className={styles.contact} id={'contact'}>
-      <div className={styles.left}>
-        <img src='assets/shake.svg' alt=''/>
-      </div>
-      <div className={styles.right}>
-        <h2>
-          Contact.
-        </h2>
-        <form 
-          onSubmit={handleSubmit} 
-        >
-            <input type='text' placeholder='Email' name='email'/>
-            <textarea placeholder='Message' name='message'></textarea>
-            <button type='submit'>Send</button>
-            {messege && <span className={styles.ok}> Thanks, I'll reply as soon as posible </span>}
-            {errorMessage && <span className={styles.error}> Sorry, something went wrong. <br/> Contact email: manuellopezanido@gmail.com</span>}
-            {loading && <span className={styles.loading}> Loading... </span>}            
-        </form>
-      </div>
+      <Slide left>
+        <div className={styles.left}>
+          <img src='assets/shake.svg' alt=''/>
+        </div>
+      </Slide>
+      <Fade>
+        <div className={styles.right}>
+          <h2>
+            Contact.
+          </h2>
+          <form 
+            onSubmit={handleSubmit} 
+          >
+              <input type='text' placeholder='Email' name='email'/>
+              <textarea placeholder='Message' name='message'></textarea>
+              <button type='submit'>Send</button>
+              {messege && <span className={styles.ok}> Thanks, I'll reply as soon as posible </span>}
+              {errorMessage && <span className={styles.error}> Sorry, something went wrong. <br/> Contact email: manuellopezanido@gmail.com</span>}
+              {loading && <span className={styles.loading}> Loading... </span>}            
+          </form>
+        </div>
+      </Fade>
     </div>
   )
 }
