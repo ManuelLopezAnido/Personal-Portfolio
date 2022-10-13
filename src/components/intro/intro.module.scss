@@ -25,11 +25,13 @@
       background-color: $circle;
       border-radius: 50%;
       border: solid 3px $developer;
+      box-sizing: border-box;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
-
+      overflow:hidden;
+     
       @include mobile {
         align-items: flex-start;
         width: 400px;
@@ -39,8 +41,10 @@
       img{
         margin-left: -70px;
         height: 105%;
+        
         @include mobile {
           margin-left: 0px;
+          margin-top: -5%;
           height: 120%;
         }
       }
