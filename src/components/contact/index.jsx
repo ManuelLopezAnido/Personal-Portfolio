@@ -61,8 +61,8 @@ const Contact = ()=>{
           <form 
             onSubmit={handleSubmit} 
           >
-              <input type='text' placeholder='Email' name='email'/>
-              <textarea placeholder='Message' name='message'></textarea>
+              <input placeholder='Email' name='email' type='email' required/>
+              <textarea placeholder='Message' name='message' required></textarea>
               <button type='submit'>Send</button>
               {messege && <span className={styles.ok}> Thanks, I'll reply as soon as posible </span>}
               {errorMessage && <span className={styles.error}> Sorry, something went wrong. <br/> Contact email: manuellopezanido@gmail.com</span>}

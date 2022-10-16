@@ -6,12 +6,16 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 110vh !important;
+  @include mobile {
+   height: 110vh !important;
+  }
 
   .title{
     position: absolute;
     top: 5px;
-
+    @include mobile {
+      display: block;
+    }
     h1{
       color: white;
       font-size: 2.1em;
@@ -20,7 +24,6 @@
     }
     }
   }
-  
   .arrow{
     width: 70px;
     position: absolute;
@@ -40,16 +43,17 @@
     }
   }
   .slider{
-    height: 350px;
+    height: 62%;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
 
     @include mobile {
-      height: 100vh;
+      margin-top: 5vh;
+      height: 95vh;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
     }
 
     .container {
@@ -57,9 +61,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      @include mobile {
+        height: 22%;
+      }
       .item{
-        width: 700px;
+        width: 51.2%;
         height: 100%;
         border-radius: 20px;
         display: flex;
@@ -72,7 +78,7 @@
         
         @include mobile {
           width: 90%;
-          height: 180px;
+          height: 100%;
           margin: 5px 0;
         }
 

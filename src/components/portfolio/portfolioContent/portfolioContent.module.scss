@@ -1,8 +1,8 @@
 @import '../../../global.scss';
 .portfolioContent{
-  width: 80%;
+  width: 75%;
   height: 90%;
-  border: solid black 1px;
+  border: solid $mainColor 2px;
   border-radius: 20px;
   display: flex;
   align-items: center;

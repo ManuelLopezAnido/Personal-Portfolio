@@ -10,12 +10,35 @@ const Portfolio = () => {
     {
       id:'aboutme',
       title: 'About me',
-      content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada eros vitae risus gravida posuere. Donec scelerisque a lectus non posuere. Duis sit amet semper felis, id bibendum nibh. Donec mollis rhoncus fermentum. Duis malesuada ipsum eget leo bibendum mattis. Vestibulum tempus dapibus maximus. Cras vestibulum ut risus non interdum. Mauris non elit eu elit lacinia posuere id ut leo. Quisque interdum turpis sed neque suscipit lobortis. Pellentesque at est erat. Aenean commodo bibendum urna et posuere. Proin velit tortor, molestie eget faucibus vitae, sollicitudin id elit. Quisque porttitor purus a vehicula consequat. Cras sollicitudin posuere varius. Donec eu pretium libero, vitae bibendum turpis. Morbi iaculis tellus non vulputate vulputate. Ut vulputate ullamcorper convallis. Duis ut dui felis'
+      content:  <>
+                  <p> My name is Manuel Lopez Anido, I’m 26 year and I’m an Industrial Engineer from Rosario, Argentina.</p> 
+                  <p>I have been working for almost 4 years as an engineer and developer. As an industrial engineer,
+                     I am qualified to understand, improve, automate and optimize the performance of processes and systems. 
+                     And trained to work in all types of industries including services and technology.</p>
+                  <p>I particularly liked programming and development, so I have specialized in this area during my work experiences.
+                     First automating complex processes with Visual Basics For Applications. 
+                     Then designing and creating an entire web application for internal use by a large company, 
+                     where I am currently working on.</p>
+                  <p>I'm a very optimistic, curious and responsible person who enjoys working in teams.
+                     I’m truly proactive, I’m amused by learning new knowledge,
+                     and I’m always trying to improve and become a better profesional.</p> 
+                </>
     },
     {
       id:' studiesandknowledge',
       title: ' Studies and Knowledge',
-      content: 'Here goes all my studies'
+      content:
+              <>
+                <p><strong>Industrial Engineer</strong> at National University of Rosario. (2014-2022).</p>
+                <p className={styles.webAppT}>Web Developer:</p> 
+                <p className={styles.webAppP}> 
+                  Frontend:  <i>React, Redux, Typescript, Git, Sass.</i> <br/> 
+                  Backend: <i>Node Js, Express, MongoDB.</i> <br/> 
+                  Web design: <i>Adobe XD.</i>
+                </p>
+                <p>I perform very well in doing Microsoft automations using <i>Visual Basic for Application</i></p>
+                <p>I also have knowledge of Blockchans. I did my final engineering project about it, which is called “Blockhains and their applications in industries”. </p>
+              </>
     },
     {
       id:'workexperience',
