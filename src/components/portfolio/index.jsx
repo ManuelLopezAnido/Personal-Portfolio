@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './portfolio.module.scss'
 import PortfolioContent from './portfolioContent'
 import PortfolioList from './portfolioList'
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Fade from 'react-reveal/Fade';
 const Portfolio = () => {
 
@@ -10,50 +11,115 @@ const Portfolio = () => {
     {
       id:'aboutme',
       title: 'About me',
-      content:  <>
-                  <p> My name is Manuel Lopez Anido, I’m 26 year and I’m an Industrial Engineer from Rosario, Argentina.</p> 
-                  <p>I have been working for almost 4 years as an engineer and developer. As an industrial engineer,
-                     I am qualified to understand, improve, automate and optimize the performance of processes and systems. 
-                     And trained to work in all types of industries including services and technology.</p>
-                  <p>I particularly liked programming and development, so I have specialized in this area during my work experiences.
-                     First automating complex processes with Visual Basics For Applications. 
-                     Then designing and creating an entire web application for internal use by a large company, 
-                     where I am currently working on.</p>
-                  <p>I'm a very optimistic, curious and responsible person who enjoys working in teams.
-                     I’m truly proactive, I’m amused by learning new knowledge,
-                     and I’m always trying to improve and become a better profesional.</p> 
-                </>
+      content: 
+      <>
+        <p> My name is Manuel Lopez Anido, I’m 26 year and I’m an Industrial Engineer from Rosario, Argentina.</p> 
+        <p>I have been working for almost 4 years as an engineer and developer. As an industrial engineer,
+            I am qualified to understand, improve, automate and optimize the performance of processes and systems. 
+            I'm trained to work in all types of industries including services and technology.</p>
+        <p>I particularly liked programming and development, so I have specialized in this area during my work experiences.
+            First automating complex processes with Visual Basics For Applications. 
+            Then designing and creating an entire web application for internal use by a large company, 
+            where I am currently working on.</p>
+        <p>I'm a very optimistic, curious and responsible person who enjoys working in teams.
+            I’m truly proactive, I’m amused by learning new knowledge,
+            and I’m always trying to improve and become a better profesional.</p> 
+        <p className={styles.ubication}> 
+          <a href={'https://goo.gl/maps/VhACAxURPFLEAzNa9'} rel={'noreferrer'} target={'_blank'}> 
+            <LocationOnIcon/> <span>Rosario, Argentina</span>
+          </a>
+        </p>
+      </>
     },
     {
       id:' studiesandknowledge',
       title: ' Studies and Knowledge',
       content:
-              <>
-                <p><strong>Industrial Engineer</strong> at National University of Rosario. (2014-2022).</p>
-                <p className={styles.webAppT}>Web Developer:</p> 
-                <p className={styles.webAppP}> 
-                  Frontend:  <i>React, Redux, Typescript, Git, Sass.</i> <br/> 
-                  Backend: <i>Node Js, Express, MongoDB.</i> <br/> 
-                  Web design: <i>Adobe XD.</i>
-                </p>
-                <p>I perform very well in doing Microsoft automations using <i>Visual Basic for Application</i></p>
-                <p>I also have knowledge of Blockchans. I did my final engineering project about it, which is called “Blockhains and their applications in industries”. </p>
-              </>
+        <>
+          <p><strong>Industrial Engineer</strong> at National University of Rosario. (2014-2022).</p>
+          <p className={styles.webAppT}>Web Developer:</p> 
+          <p className={styles.webAppP}> 
+            Frontend:  <i>React, Redux, Typescript, Git, Sass.</i> <br/> 
+            Backend: <i>Node Js, Express, MongoDB.</i> <br/> 
+            Web design: <i>Adobe XD.</i>
+          </p>
+          <p>I perform very well in doing Microsoft automations using <i>Visual Basic for Application</i></p>
+          <p>I also have knowledge of Blockchans. I did my final engineering project about it, which is called “Blockhains and their applications in industries”. </p>
+        </>
     },
     {
       id:'workexperience',
       title: 'Work Experience',
-      content: 'My experience in Liliana, oh what a company'
+      content:
+        <>
+          <p  className={styles.workExpierence}>
+            <strong>Liliana household appliances. (2021-Present): </strong>
+            Web developer. In charge of design, build, update, improve and maintain a web application created by scratch. 
+            Both frontend and backend. 
+            Application which is used by hundreds of workers every day, in different areas of the company. 
+            Mentoring and supervising two junior internship developers who collaborate with the app. 
+          </p>
+          <p className={styles.workExpierence}>
+            Automating and improving complex processes and data management 
+            for the company programming in Visual Basics For Applications
+          </p>
+          <p className={styles.workExpierence}>
+            More about Liliana and the Application in <a href = {'#works'}>next section</a>
+          </p>
+          <p>
+            <strong>Intern for the Municipality of Rosario. (2019-2020): </strong>
+            Continual improvement process. 
+            Upgrading and reprocesses related to private building licenses in the city.                  
+          </p>
+          <p>
+            <strong>Intern at the engineering consulting company "Goldvarg Ingeniería". 2018: </strong>
+            In charge of two improvement projects in different areas 
+            at the Nuevo Central Argentino (NCA) railway company. 
+          </p>
+        </>
     },
     {
       id:'otherexperiences',
-      title: 'Other experiences',
-      content: 'All experiences, TECHO and maybe the six month exprience living in USA (?'
+      title: 'Other Experiences',
+      content: 
+        <>
+          <p>
+            <strong>Volunteer in the non-governmental organization "TECHO". 2018-Present: </strong>
+              TECHO is an NGO dedicated to improving the poverty situation of people living in informal settlements.
+              Building, among other things, small houses for homeless people in Rosario. 
+              I have worked as coordinator in mulpites projects for the organization
+          </p>
+          <p>
+            <strong>Personal training experience living six months in the United States. 2012: </strong> 
+              Completing the 4th year of high school in Orono, Maine.
+              This expirence gave me, in addition to a great ability to understand and speak English,
+              a capacity for independence and ease with people from different backgrounds and cultures.
+          </p>
+        </>
     },
     {
       id:'languages',
-      title: 'Languages',
-      content: 'I dont knok that many lengagues, what else should I put here? :/'
+      title: 'Languages and Hobbies',
+      content: 
+        <>
+          <p>
+            <strong>Spanish: </strong>Native
+          </p>
+          <p>
+            <strong>English: </strong>Proficiency
+          </p>
+          <p>
+            <strong>German: </strong>Inicial
+          </p>
+          <p>
+            <strong>Hobbies: </strong>
+            In my free time I enjoy being with friends and practicing sports. 
+            I have played water polo for the university team since 2015. 
+            I also enjoy playing the asian board game of GO and Chess. 
+            On weekends I like to go paddling on the river in my kayak, 
+            watch Formula 1 races, and play tennis with my girlfriend.
+          </p>
+        </>
     },
 
   ]
@@ -83,6 +149,7 @@ const Portfolio = () => {
           <PortfolioContent 
             selected={selected}
             content = {list.find(item=>item.id===selected).content}
+            id = {list.find(item=>item.id===selected).id}
           />
         </div>
       </div>

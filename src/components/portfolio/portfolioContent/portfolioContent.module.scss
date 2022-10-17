@@ -1,12 +1,13 @@
 @import '../../../global.scss';
 .portfolioContent{
   width: 75%;
-  height: 90%;
+  height: 85%;
   border: solid $mainColor 2px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   
   @include mobile {

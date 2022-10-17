@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+  
     @include mobile {
       width: 100%; 
       align-items: flex-start;
@@ -58,5 +58,26 @@
       margin-top: 0px ;
     }
 
+    .workExpierence{
+      margin: 0px;
+      a{
+        color: inherit;
+      }
+    }
+    .ubication{
+      margin-top: 5%;
+      margin-left: -5px;
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
+      svg{
+        margin-bottom: -5px;
+        color: $mainColor;
+      }
+      span{
+        margin-left: -3px;
+      }
+    }
   }
 }
