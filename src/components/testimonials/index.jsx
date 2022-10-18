@@ -11,8 +11,10 @@ const Testimonials = ()=>{
       email: 'hgerber@liliana.com.ar',
       linkedin: 'https://www.linkedin.com/in/heraldogerber/',
       feature: false,
-      testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-                    '  Numquam odio animi debitis repellendus ' 
+      testimonial: 
+        <>
+          "He is comfortable with changes. Sees difficulties as a challenges to overcome..."
+        </>
     },
     // {
     //   name: 'Richard Mitchell',
@@ -31,8 +33,10 @@ const Testimonials = ()=>{
       email: 'vpintos@liliana.com.ar ',
       linkedin: 'https://www.linkedin.com/in/vanina-pintos-66ab3418/',
       feature: false,
-      testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-                    '  Numquam odio animi debitis repellendus ' 
+      testimonial: 
+        <>
+          "Excellent learning new things in a short time, applying the knowledge in his day to day work life..."
+        </>
     },
     {
       name: 'Walter San Marco',
@@ -41,8 +45,10 @@ const Testimonials = ()=>{
       email: 'walter.sanmarco@gmail.com',
       linkedin: 'https://www.linkedin.com/in/walter-sanmarco-88b25511a/',
       feature: false,
-      testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-                    '  Numquam odio animi debitis repellendus ' 
+      testimonial: 
+      <>
+          "Always in a good mood and willing to help others. Colleagues are very happy with him..."
+      </>
     },
     {
       name: 'Ariel Goldbarg',
@@ -51,8 +57,10 @@ const Testimonials = ()=>{
       email: 'ariel@goldvarg.com.ar',
       linkedin: 'https://www.linkedin.com/in/arielgoldvarg/',
       feature: false,
-      testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-                    '  Numquam odio animi debitis repellendus '
+      testimonial: 
+        <>
+          "Very quick adaptation to the corporate culture. Responsible and committed..."
+        </>  
     }
   ]
   const emailCopied = (email) =>{

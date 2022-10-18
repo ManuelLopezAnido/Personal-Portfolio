@@ -32,7 +32,7 @@
   }
   .container{
     width: 100%;
-    height: 100%;
+    height: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +77,33 @@
       }
       span{
         margin-left: -3px;
+      }
+    }
+    .logoConteiner{
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      height: 10%;
+      .logo{
+        height: 100%;
+        img{
+          height:100%;
+        }
+      }
+      :nth-child(2){
+        height: 80%;
+      }
+      :nth-child(3){
+        height: 120%;
+      }
+      :nth-child(4){
+        height: 110%;
+      }
+      :nth-child(4){
+        height: 115%;
+      }
+      :nth-child(5){
+        height: 120%;
       }
     }
   }

@@ -36,7 +36,7 @@ const Portfolio = () => {
       title: ' Studies and Knowledge',
       content:
         <>
-          <p><strong>Industrial Engineer</strong> at National University of Rosario. (2014-2022).</p>
+          <p><strong>Industrial Engineer</strong> at Universidad Nacional de Rosario (UNR). (2014-2022).</p>
           <p className={styles.webAppT}>Web Developer:</p> 
           <p className={styles.webAppP}> 
             Frontend:  <i>React, Redux, Typescript, Git, Sass.</i> <br/> 
@@ -44,7 +44,28 @@ const Portfolio = () => {
             Web design: <i>Adobe XD.</i>
           </p>
           <p>I perform very well in doing Microsoft automations using <i>Visual Basic for Application</i></p>
-          <p>I also have knowledge of Blockchans. I did my final engineering project about it, which is called “Blockhains and their applications in industries”. </p>
+          <p>
+            I also have knowledge of Blockchans. 
+            I did my final engineering project about it, which is called 
+            “Blockhains and their applications in industries”. 
+          </p>
+          <div className={styles.logoConteiner}>
+            <div className={styles.logo}>
+              <img  src={'assets/reactLogo.png'} alt={''}/>
+            </div>
+            <div className={styles.logo}>
+              <img  src={'assets/nodejsLogoB.png'} alt={''}/>
+            </div>
+            <div className={styles.logo}>
+              <img  src={'assets/typescriptLogoB.png'} alt={''}/>
+            </div>
+            <div className={styles.logo}>
+              <img  src={'assets/sassLogoB.png'} alt={''}/>
+            </div>
+            <div className={styles.logo}>
+              <img  src={'assets/VBALogoB.png'} alt={''}/>
+            </div>
+          </div>
         </>
     },
     {
@@ -83,9 +104,10 @@ const Portfolio = () => {
       title: 'Other Experiences',
       content: 
         <>
-          <p>
+          <p className={styles.workExpierence}>
             <strong>Volunteer in the non-governmental organization "TECHO". 2018-Present: </strong>
-              TECHO is an NGO dedicated to improving the poverty situation of people living in informal settlements.
+              <a href='https://techo.org' rel={'noreferrer'} target={'_blank'}>TECHO</a> is an NGO dedicated 
+              to improving the poverty situation of people living in informal settlements.
               Building, among other things, small houses for homeless people in Rosario. 
               I have worked as coordinator in mulpites projects for the organization
           </p>
