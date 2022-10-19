@@ -23,7 +23,7 @@ const Portfolio = () => {
             where I am currently working on.</p>
         <p>I'm a very optimistic, curious and responsible person who enjoys working in teams.
             I’m truly proactive, I’m amused by learning new knowledge,
-            and I’m always trying to improve and become a better profesional.</p> 
+            and I’m always trying to improve and become a better professional.</p> 
         <p className={styles.ubication}> 
           <a href={'https://goo.gl/maps/VhACAxURPFLEAzNa9'} rel={'noreferrer'} target={'_blank'}> 
             <LocationOnIcon/> <span>Rosario, Argentina</span>
@@ -36,7 +36,7 @@ const Portfolio = () => {
       title: ' Studies and Knowledge',
       content:
         <>
-          <p><strong>Industrial Engineer</strong> at Universidad Nacional de Rosario (UNR). (2014-2022).</p>
+          <p><strong>Academic Degree:</strong> Industrial Engineer at Universidad Nacional de Rosario (UNR). (2014-2022).</p>
           <p className={styles.webAppT}>Web Developer:</p> 
           <p className={styles.webAppP}> 
             Frontend:  <i>React, Redux, Typescript, Git, Sass.</i> <br/> 
@@ -114,7 +114,7 @@ const Portfolio = () => {
           <p>
             <strong>Personal training experience living six months in the United States. 2012: </strong> 
               Completing the 4th year of high school in Orono, Maine.
-              This expirence gave me, in addition to a great ability to understand and speak English,
+              This experience gave me, in addition to a great ability to understand and speak English,
               a capacity for independence and ease with people from different backgrounds and cultures.
           </p>
         </>
@@ -125,13 +125,14 @@ const Portfolio = () => {
       content: 
         <>
           <p>
-            <strong>Spanish: </strong>Native
+            <strong>Spanish: </strong>Native speaker
           </p>
           <p>
-            <strong>English: </strong>Proficiency
+            <strong>English: </strong>Advanced Level. 
+            Cambridge First Certificate English – IATEL 2014. Fluent Speaker
           </p>
           <p>
-            <strong>German: </strong>Inicial
+            <strong>German: </strong>Inicial. 3 years studying at Universidad Nacional de Rosario 
           </p>
           <p>
             <strong>Hobbies: </strong>

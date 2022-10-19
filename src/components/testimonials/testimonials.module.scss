@@ -54,9 +54,9 @@
     justify-content: center;
     
     @include mobile {
-      justify-content:flex-start;
       flex-direction: column;
       height: 135vh;
+      margin-top: -5%;
     }
   
     .card{
@@ -85,6 +85,9 @@
       &:hover{
         transform: scale(1.1);
         margin: 0 30px;
+        @include mobile {
+          transform: scale(1.05);
+        }
       }
       .top{
         display: flex;

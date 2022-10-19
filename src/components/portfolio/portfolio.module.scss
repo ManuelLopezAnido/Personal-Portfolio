@@ -10,8 +10,7 @@
   @include mobile {
     position: relative;
     height: fit-content !important;
-    min-height: 120vh !important;
-  
+    min-height: 80vh !important;
   }
 
   h1{
@@ -93,26 +92,50 @@
       display: flex;
       justify-content: space-around;
       height: 10%;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -5%;
+        height: 30vh;
+      }
+
       .logo{
         height: 100%;
         img{
           height:100%;
+          @include mobile{
+            margin-top: 0;
+          }
+        }
+        @include mobile{
+         height: 15%;
         }
       }
+
       :nth-child(2){
         height: 80%;
+        @include mobile{
+          height: 10%;
+        }
       }
       :nth-child(3){
         height: 120%;
-      }
-      :nth-child(4){
-        height: 110%;
+        @include mobile{
+          height: 15%;
+        }
       }
       :nth-child(4){
         height: 115%;
+        @include mobile{
+          height: 15%;
+        }
       }
       :nth-child(5){
         height: 120%;
+        @include mobile{
+          height: 15%;
+        }
       }
     }
   }
