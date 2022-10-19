@@ -7,6 +7,13 @@
   flex-direction: column;
   align-items: center;
 
+  @include mobile {
+    position: relative;
+    height: fit-content !important;
+    min-height: 120vh !important;
+  
+  }
+
   h1{
     font-size: 2.1em;
     color: $mainColor;
@@ -39,6 +46,8 @@
   
     @include mobile {
       width: 100%; 
+      height: 90%;
+      margin-bottom: 5%;
       align-items: flex-start;
     }
     p{
@@ -54,8 +63,8 @@
       margin-bottom: 0px;
     }
     .webAppP{
-      padding-left: 5em;
-      margin-top: 0px ;
+      padding-left: 0em;
+      margin-top: 3px ;
     }
 
     .workExpierence{

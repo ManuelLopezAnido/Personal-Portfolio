@@ -11,12 +11,12 @@ body {
     position: relative;
     top: 70px;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     overflow-y: scroll;
     scrollbar-width: none;
 
     @include mobile {
-      scroll-snap-type: y proximity;
+      scroll-snap-type: none;
     }
 
     &::-webkit-scrollbar{
@@ -27,6 +27,9 @@ body {
     > *{
       height: 100%;
       scroll-snap-align: start;
+      @include mobile {
+        
+      }
     }
   }
 }

@@ -10,7 +10,6 @@
   @include mobile {
     position: relative;
     height: 140vh !important;
-    scroll-snap-align: none !important;
     justify-content: flex-start;
   }
 

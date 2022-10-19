@@ -12,11 +12,14 @@
   
   @include mobile {
     margin-top: 8%;
-    height: 80%;
+    height: 90%;
   }
 
   .text{
     width: 90%;
     height: 90%;
+    @include mobile {
+      height: 100%;
+    }
   }
 }
