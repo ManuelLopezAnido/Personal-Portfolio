@@ -45,9 +45,9 @@ const Portfolio = () => {
           </p>
           <p>I perform very well in doing Microsoft automations using <i>Visual Basic for Application</i></p>
           <p>
-            I also have knowledge of Blockchans. 
+            I also have knowledge of Blockchains. 
             I did my final engineering project about it, which is called 
-            “Blockhains and their applications in industries”. 
+            "Blockchains and their applications in industries”. 
           </p>
           <div className={styles.logoConteiner}>
             <div className={styles.logo}>
@@ -83,7 +83,7 @@ const Portfolio = () => {
           </p>
           <p className={styles.workExpierence}>
             Automating and improving complex processes and data management 
-            for the company programming in Visual Basics For Applications
+            for the company, programming in Visual Basics For Applications
           </p>
           <p className={styles.workExpierence}>
             More about Liliana and the Application in <a href = {'#works'}>next section</a>
@@ -102,7 +102,7 @@ const Portfolio = () => {
     },
     {
       id:'otherexperiences',
-      title: 'Other Experiences',
+      title: 'Volunteering',
       content: 
         <>
           <p className={styles.workExpierence}>
