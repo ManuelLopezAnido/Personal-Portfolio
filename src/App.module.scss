@@ -27,9 +27,6 @@ body {
     > *{
       height: 100%;
       scroll-snap-align: start;
-      @include mobile {
-        
-      }
     }
   }
 }

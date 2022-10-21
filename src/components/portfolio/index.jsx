@@ -21,7 +21,7 @@ const Portfolio = () => {
             First automating complex processes with Visual Basics For Applications. 
             Then designing and creating an entire web application for internal use by a large company, 
             where I am currently working on.</p>
-        <p>I'm a very optimistic, curious and responsible person who enjoys working in teams.
+        <p>I'm a very optimistic, curious, and responsible person who enjoys working in teams.
             I’m truly proactive, I’m amused by learning new knowledge,
             and I’m always trying to improve and become a better professional.</p> 
         <p className={styles.ubication}> 
@@ -39,9 +39,9 @@ const Portfolio = () => {
           <p><strong>Academic Degree:</strong> Industrial Engineer at Universidad Nacional de Rosario (UNR). (2014-2022).</p>
           <p className={styles.webAppT}>Web Developer:</p> 
           <p className={styles.webAppP}> 
-            Frontend:  <i>React, Redux, Typescript, Git, Sass.</i> <br/> 
+            Frontend:  <i>React, Redux, Typescript, Sass, Adobe XD.</i> <br/> 
             Backend: <i>Node Js, Express, MongoDB.</i> <br/> 
-            Web design: <i>Adobe XD.</i>
+            Version control: <i>Git, GitHub.</i>
           </p>
           <p>I perform very well in doing Microsoft automations using <i>Visual Basic for Application</i></p>
           <p>
@@ -74,10 +74,11 @@ const Portfolio = () => {
       content:
         <>
           <p  className={styles.workExpierence}>
-            <strong>Liliana household appliances. (2021-Present): </strong>
-            Web developer. In charge of design, build, update, improve and maintain a web application created by scratch. 
+            <strong>Engineer at Liliana household appliances company. (Jun 2021 - Present): </strong>
+            Developer. 
+            In charge of designing, building, updating, improving, and maintaining a web application created from scratch. 
             Both frontend and backend. 
-            Application which is used by hundreds of workers every day, in different areas of the company. 
+            An application that is used by hundreds of workers every day, in different areas of the company. 
             Mentoring and supervising two junior internship developers who collaborate with the app. 
           </p>
           <p className={styles.workExpierence}>
@@ -88,12 +89,12 @@ const Portfolio = () => {
             More about Liliana and the Application in <a href = {'#works'}>next section</a>
           </p>
           <p>
-            <strong>Intern for the Municipality of Rosario. (2019-2020): </strong>
+            <strong>Intern for the Municipality of Rosario. (Mar 2019 - Oct 2020): </strong>
             Continual improvement process. 
-            Upgrading and reprocesses related to private building licenses in the city.                  
+            Upgrading and innovating processes related to private building licenses in the city.                  
           </p>
           <p>
-            <strong>Intern at the engineering consulting company "Goldvarg Ingeniería". 2018: </strong>
+            <strong>Intern at the engineering consulting company "Goldvarg Ingeniería". (Nov 2017 - Mar 2018): </strong>
             In charge of two improvement projects in different areas 
             at the Nuevo Central Argentino (NCA) railway company. 
           </p>
@@ -105,14 +106,13 @@ const Portfolio = () => {
       content: 
         <>
           <p className={styles.workExpierence}>
-            <strong>Volunteer in the non-governmental organization "TECHO". 2018-Present: </strong>
-              <a href='https://techo.org' rel={'noreferrer'} target={'_blank'}>TECHO</a> is an NGO dedicated 
-              to improving the poverty situation of people living in informal settlements.
-              Building, among other things, small houses for homeless people in Rosario. 
-              I have worked as coordinator in mulpites projects for the organization
+            <strong>Volunteer in the non-governmental organization "TECHO". (Mar 2018 - Present): </strong>
+              Builder and coordinator. <a href='https://techo.org' rel={'noreferrer'} target={'_blank'}>TECHO</a> is
+              an NGO dedicated to improving the poverty situation of people living in informal settlements.
+              Building, among other projects, small houses for homeless people in Rosario. 
           </p>
           <p>
-            <strong>Personal training experience living six months in the United States. 2012: </strong> 
+            <strong>Personal training experience living six months in the United States. (Jan - Jul 2012): </strong> 
               Completing the 4th year of high school in Orono, Maine.
               This experience gave me, in addition to a great ability to understand and speak English,
               a capacity for independence and ease with people from different backgrounds and cultures.
