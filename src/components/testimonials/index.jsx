@@ -13,7 +13,7 @@ const Testimonials = ()=>{
       feature: false,
       testimonial: 
         <>
-          "He is comfortable with changes. Sees difficulties as a challenges to overcome..."
+          "He is comfortable with changes. Sees difficulties as challenges to overcome..."
         </>
     },
     // {
@@ -35,7 +35,7 @@ const Testimonials = ()=>{
       feature: false,
       testimonial: 
         <>
-          "Excellent learning new things in a short time, applying the knowledge in his day to day work life..."
+          "Excellent learning new things in a short time, applying the knowledge in his day-to-day work life..."
         </>
     },
     {
@@ -47,7 +47,7 @@ const Testimonials = ()=>{
       feature: false,
       testimonial: 
       <>
-          "Always in a good mood and willing to help others. Colleagues are very happy with him..."
+          "Always in a good mood and willing to help others. His colleagues are very happy with him..."
       </>
     },
     {

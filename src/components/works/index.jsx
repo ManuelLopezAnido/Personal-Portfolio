@@ -13,7 +13,7 @@ const Works = ()=>{
       desc: 
         <>
           Liliana is a company that designs, 
-          manufactures and markets home appliances throughout Argentina and nearby countries. 
+          manufactures, and markets home appliances throughout Argentina and nearby countries. 
           It has about 1200 employees and produces more than 14000 products per day.
         </> ,
       img: "assets/liliana.jpg"
@@ -51,8 +51,8 @@ const Works = ()=>{
       desc: 
         <>
          Operator at a forklift using the application 
-         to record components movements in the racks. 
-         Liliana moves thousands of items per day in differents racks
+         to record component's movements in the racks. 
+         Liliana moves thousands of items per day in different racks
         </>
       ,
       img: "assets/lilianaDepositos.jpeg"

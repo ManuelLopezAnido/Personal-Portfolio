@@ -13,7 +13,7 @@ const Portfolio = () => {
       title: 'About me',
       content: 
       <>
-        <p> My name is Manuel Lopez Anido, I’m 26 year and I’m an Industrial Engineer from Rosario, Argentina.</p> 
+        <p> My name is Manuel Lopez Anido, I’m 26 years and I’m an Industrial Engineer from Rosario, Argentina.</p> 
         <p>I have been working for almost 4 years as an engineer and developer. As an industrial engineer,
             I am qualified to understand, improve, automate and optimize the performance of processes and systems. 
             I'm trained to work in all types of industries including services and technology.</p>
@@ -86,7 +86,7 @@ const Portfolio = () => {
             for the company, programming in Visual Basics For Applications
           </p>
           <p className={styles.workExpierence}>
-            More about Liliana and the Application in <a href = {'#works'}>next section</a>
+            More about Liliana and the Application in the <a href = {'#works'}>next section</a>
           </p>
           <p>
             <strong>Intern for the Municipality of Rosario. (Mar 2019 - Oct 2020): </strong>
@@ -136,7 +136,7 @@ const Portfolio = () => {
           </p>
           <p>
             <strong>Hobbies: </strong>
-            In my free time I enjoy being with friends and practicing sports. 
+            In my free time, I enjoy being with friends and practicing sports. 
             I have played water polo for the university team since 2015. 
             I also enjoy playing the asian board game of GO and Chess. 
             On weekends I like to go paddling on the river in my kayak, 
