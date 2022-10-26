@@ -15,15 +15,16 @@ const Portfolio = () => {
       <>
         <p> My name is Manuel Lopez Anido, I’m 26 years and I’m an Industrial Engineer from Rosario, Argentina.</p> 
         <p>I have been working for almost 4 years as an engineer and developer. As an industrial engineer,
-            I am qualified to understand, improve, automate and optimize the performance of processes and systems. 
-            I'm trained to work in all types of industries including services and technology.</p>
-        <p>I particularly liked programming and development, so I have specialized in this area during my work experiences.
-            First automating complex processes with Visual Basics For Applications. 
-            Then designing and creating an entire web application for internal use by a large company, 
-            where I am currently working on.</p>
-        <p>I'm a very optimistic, curious, and responsible person who enjoys working in teams.
-            I’m truly proactive, I’m amused by learning new knowledge,
-            and I’m always trying to improve and become a better professional.</p> 
+            I am qualified to analyze, improve, automate and optimize the performance of processes and systems. 
+            I'm trained to work in diverse industries including services and technology.</p>
+        <p>I especially like programming and development, 
+          so I have specialized in these areas during my previous work experiences.
+            For example, I have experience in automating complex processes with Visual Basics For Applications,  
+            and in designing and creating an entire web application for internal use by a large company, 
+            where I am currently working.</p>
+        <p>I'm a very optimistic, curious, and responsible person who enjoys working in teams. 
+            I’m motivated by learning new knowledge, 
+            and I’m always striving to expand my professional skill set.</p> 
         <p className={styles.ubication}> 
           <a href={'https://goo.gl/maps/VhACAxURPFLEAzNa9'} rel={'noreferrer'} target={'_blank'}> 
             <LocationOnIcon/> <span>Rosario, Argentina</span>
@@ -43,11 +44,11 @@ const Portfolio = () => {
             Backend: <i>Node Js, Express, MongoDB.</i> <br/> 
             Version control: <i>Git, GitHub.</i>
           </p>
-          <p>I perform very well in doing Microsoft automations using <i>Visual Basic for Application</i></p>
+          <p>I am highly proficient in Microsoft automations using <i>Visual Basic for Application</i></p>
           <p>
-            I also have knowledge of Blockchains. 
-            I did my final engineering project about it, which is called 
-            "Blockchains and their applications in industries”. 
+            I also have industry-relevant knowledge of Blockchains. 
+            I researched this topic in-depth for my final engineering project: 
+            entitled “Blockchains and Their Applications in Industries.”
           </p>
           <div className={styles.logoConteiner}>
             <div className={styles.logo}>
@@ -115,7 +116,7 @@ const Portfolio = () => {
             <strong>Personal training experience living six months in the United States. (Jan - Jul 2012): </strong> 
               Completing the 4th year of high school in Orono, Maine.
               This experience gave me, in addition to a great ability to understand and speak English,
-              a capacity for independence and ease with people from different backgrounds and cultures.
+              a strong sense of independence and ease with people from different backgrounds and cultures.
           </p>
         </>
     },
@@ -137,8 +138,8 @@ const Portfolio = () => {
           <p>
             <strong>Hobbies: </strong>
             In my free time, I enjoy being with friends and practicing sports. 
-            I have played water polo for the university team since 2015. 
-            I also enjoy playing the asian board game of GO and Chess. 
+            I have played water polo for my university team since 2015. 
+            I also enjoy playing the board game of GO and Chess. 
             On weekends I like to go paddling on the river in my kayak, 
             watch Formula 1 races, and play tennis with my girlfriend.
           </p>
