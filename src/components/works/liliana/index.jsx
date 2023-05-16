@@ -2,9 +2,8 @@ import { useState } from 'react'
 import styles from './works.module.scss'
 import Fade from 'react-reveal/Fade';
 
-const Works = ()=>{
+const WorkLilana = ()=>{
   const [currentSlider, setCurrentSlider] = useState (0)
-  console.log(currentSlider)
   const data = [
     {
       id: "1",
@@ -59,7 +58,6 @@ const Works = ()=>{
     }
   ]
   const handleClick = (type) =>{
-    console.log('clicked')
     const len = data.length - 1
     type === 'l' ? 
     currentSlider === 0 ? setCurrentSlider(len) : setCurrentSlider(currentSlider - 1) :
@@ -77,7 +75,7 @@ const Works = ()=>{
               data.map((d) => {
                 return(
                   <div className={styles.container} key={d.id}>
-                    <div className={styles.item} style={{backgroundImage: `url(${d.img})`}}>
+                    <div className={styles.item} style={{backgroundImage: `url(${d.img})`} }>
                       <div className={styles.left}>
                         <div className={styles.leftContainer}>
                           <h2>{d.title}</h2>
@@ -115,4 +113,4 @@ const Works = ()=>{
     </Fade>
   )
 }
-export default Works
+export default WorkLilana

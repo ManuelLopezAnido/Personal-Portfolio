@@ -11,7 +11,6 @@ const Contact = ()=>{
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
-    console.log('mes send')
     const data = 
     {
       'Email': e.target.email.value,

@@ -4,7 +4,7 @@ import Topbar from './components/topbar'
 import Menu from './components/menu'
 import Intro from './components/intro';
 import Portfolio from './components/portfolio';
-import Works from './components/works';
+import WorkLiliana from './components/works/liliana';
 import Testimonials from './components/testimonials';
 import Contact from './components/contact';
 import useClickOutside from './useClickOutside';
@@ -28,7 +28,7 @@ function App() {
       <div className={styles.sections}>
         <Intro/>
         <Portfolio/>
-        <Works/>
+        <WorkLiliana />
         <Testimonials/>
         <Contact/>
       </div>

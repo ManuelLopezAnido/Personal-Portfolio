@@ -51,7 +51,6 @@
     }
     p{
       font-size: 1.05em ;
-      //font-size: 16px;
     }
     i{
       color: black;
@@ -66,14 +65,20 @@
       margin-top: 3px ;
     }
 
-    .workExpierence{
+    .noMargin{
       margin: 0px;
       a{
         color: inherit;
       }
     }
+    .noMarginBottom{
+      margin-bottom: 0px;
+    }
+    a {
+      color: inherit;
+    }
     .ubication{
-      margin-top: 5%;
+      margin-top: 3%;
       margin-left: -5px;
       a{
         color: inherit;
@@ -92,12 +97,13 @@
       display: flex;
       justify-content: space-around;
       height: 10%;
+      margin-top: 5%;
 
       @include mobile {
         flex-direction: column;
         align-items: center;
         margin-top: -5%;
-        height: 30vh;
+        height: 35vh;
       }
 
       .logo{
@@ -109,14 +115,18 @@
           }
         }
         @include mobile{
-         height: 15%;
+          height: 12%;
         }
       }
 
       :nth-child(2){
         height: 80%;
+        position: relative; /* enable relative positioning */
+        top: 5%; /* move 4th child up by 10px */
         @include mobile{
           height: 10%;
+          position: relative; /* enable relative positioning */
+          top: 0%; /* move 4th child up by 10px */
         }
       }
       :nth-child(3){
@@ -126,15 +136,22 @@
         }
       }
       :nth-child(4){
-        height: 115%;
+        height: 120%;
+        
         @include mobile{
           height: 15%;
         }
       }
       :nth-child(5){
-        height: 120%;
+        height: 115%;
         @include mobile{
           height: 15%;
+        }
+      }
+      :nth-child(6){
+        height: 105%;
+        @include mobile{
+          height: 12%;
         }
       }
     }

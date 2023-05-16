@@ -5,9 +5,21 @@ const Testimonials = ()=>{
   const [email, setEmail] = useState(false)
   const data = [
     {
+      name: 'Martin Amato',
+      position: 'Technical Owner in Galicia',
+      image:'picMartin.jpg',
+      email: 'martin.amato@bancogalicia.com.ar',
+      linkedin: 'https://www.linkedin.com/in/martin-amato-a1655aa8/',
+      feature: false,
+      testimonial: 
+      <>
+        "Excellent learning new things in a short time, applying the knowledge in his day-to-day work life..."
+      </>
+    },
+    {
       name: 'Heraldo Gerber',
       position: 'Liliana\'s IT Manager',
-      image: 'heraldo.jpg',
+      image: 'picHeraldo.jpg',
       email: 'hgerber@liliana.com.ar',
       linkedin: 'https://www.linkedin.com/in/heraldogerber/',
       feature: false,
@@ -16,44 +28,22 @@ const Testimonials = ()=>{
           "He is comfortable with changes. Sees difficulties as challenges to overcome..."
         </>
     },
-    // {
-    //   name: 'Richard Mitchell',
-    //   position: 'Liliana\'s CEO',
-    //   image: 'richard.jpg',
-    //   email: 'mitchell@liliana.com.ar',
-    //   linkedin: 'https://www.linkedin.com/in/richard-mitchell-b23283127/',
-    //   feature: false,
-    //   testimonial: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' +
-    //                 '  Numquam odio animi debitis repellendus ' 
-    // },
     {
       name: 'Vanina Pintos',
       position: 'Liliana\'s Production Manger',
-      image:'vanina.jpg',
+      image:'picVanina.jpg',
       email: 'vpintos@liliana.com.ar ',
       linkedin: 'https://www.linkedin.com/in/vanina-pintos-66ab3418/',
       feature: false,
       testimonial: 
         <>
-          "Excellent learning new things in a short time, applying the knowledge in his day-to-day work life..."
+         "Always in a good mood and willing to help others. His colleagues are very happy with him..."
         </>
-    },
-    {
-      name: 'Walter San Marco',
-      position: 'Liliana\'s Planning Manger',
-      image:'walter.jpg',
-      email: 'walter.sanmarco@gmail.com',
-      linkedin: 'https://www.linkedin.com/in/walter-sanmarco-88b25511a/',
-      feature: false,
-      testimonial: 
-      <>
-          "Always in a good mood and willing to help others. His colleagues are very happy with him..."
-      </>
     },
     {
       name: 'Ariel Goldbarg',
       position: 'Goldvarg Consultant\'s CEO',
-      image: 'ariel.jpg',
+      image: 'picAriel.jpg',
       email: 'ariel@goldvarg.com.ar',
       linkedin: 'https://www.linkedin.com/in/arielgoldvarg/',
       feature: false,

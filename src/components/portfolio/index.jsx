@@ -13,16 +13,15 @@ const Portfolio = () => {
       title: 'About me',
       content: 
       <>
-        <p> My name is Manuel Lopez Anido, I’m 26 years and I’m an Industrial Engineer from Rosario, Argentina.</p> 
-        <p>I have been working for almost 4 years as an engineer and developer. As an industrial engineer,
+        <p> My name is Manuel Lopez Anido, I’m 27 years and I’m an Industrial Engineer and Web Developer from Rosario, Argentina.</p> 
+        <p> I have been working for almost 3 years as an engineer and developer. Building, improving, and
+            maintaining entire web applications for different large companies. As an industrial engineer,
             I am qualified to analyze, improve, automate and optimize the performance of processes and systems. 
             I'm trained to work in diverse industries including services and technology.</p>
-        <p>I especially like programming and development, 
-          so I have specialized in these areas during my previous work experiences.
-            For example, I have experience in automating complex processes with Visual Basics For Applications,  
-            and in designing and creating an entire web application for internal use by a large company, 
-            where I am currently working.</p>
-        <p>I'm a very optimistic, curious, and responsible person who enjoys working in teams. 
+        <p> I especially like programming and development, 
+            so I have specialized in these areas during my work experiences.
+            I have experience working on the frontend, backend, data management and automation for important companies in Argentina.</p>
+        <p> I'm a very optimistic, curious, and responsible person who enjoys working in teams. 
             I’m motivated by learning new knowledge, 
             and I’m always striving to expand my professional skill set.</p> 
         <p className={styles.ubication}> 
@@ -40,8 +39,8 @@ const Portfolio = () => {
           <p><strong>Academic Degree:</strong> Industrial Engineer at Universidad Nacional de Rosario (UNR). (2014-2022).</p>
           <p className={styles.webAppT}>Web Developer:</p> 
           <p className={styles.webAppP}> 
-            Frontend:  <i>React, Redux, Typescript, Sass, Adobe XD.</i> <br/> 
-            Backend: <i>Node Js, Express, MongoDB.</i> <br/> 
+            Frontend:  <i> Typescript, React, Next.js, Redux, Sass.</i> <br/> 
+            Backend: <i> Node.js, Express, Nest.js, MongoDB.</i> <br/> 
             Version control: <i>Git, GitHub.</i>
           </p>
           <p>I am highly proficient in Microsoft automations using <i>Visual Basic for Application</i></p>
@@ -52,19 +51,22 @@ const Portfolio = () => {
           </p>
           <div className={styles.logoConteiner}>
             <div className={styles.logo}>
-              <img  src={'assets/reactLogo.png'} alt={''}/>
+              <img  src={'assets/logoReact.png'} alt={''}/>
             </div>
             <div className={styles.logo}>
-              <img  src={'assets/nodejsLogoB.png'} alt={''}/>
+              <img  src={'assets/logoNodejs.png'} alt={''}/>
             </div>
             <div className={styles.logo}>
-              <img  src={'assets/typescriptLogoB.png'} alt={''}/>
+              <img  src={'assets/logoTypescript.png'} alt={''}/>
             </div>
             <div className={styles.logo}>
-              <img  src={'assets/sassLogoB.png'} alt={''}/>
+              <img  src={'assets/logoNextJs.png'} alt={''}/>
             </div>
             <div className={styles.logo}>
-              <img  src={'assets/VBALogoB.png'} alt={''}/>
+              <img  src={'assets/logoSass.png'} alt={''}/>
+            </div>
+            <div className={styles.logo}>
+              <img  src={'assets/logoNestJs.png'} alt={''}/>
             </div>
           </div>
         </>
@@ -74,19 +76,30 @@ const Portfolio = () => {
       title: 'Work Experience',
       content:
         <>
-          <p  className={styles.workExpierence}>
-            <strong>Engineer at Liliana household appliances company. (Jun 2021 - Present): </strong>
+          <p className={styles.noMarginBottom}>
+            <strong> Web Development Engineer at Accenture. (Dec 2022 – Present): </strong>
+            Accenture Web Developer. Currently assigned to "Banco Galicia", the most important Accenture client in
+            Argentina.
+            Working in an Agile Team responsible for building and maintaining critical web applications that support
+            the bank's day-to-day operations.
+          </p>
+          <p className={styles.noMargin}>
+            Developing on the frontend using Next.js and on the backend using Nest.js, under the microservice
+            architecture. 
+          </p>
+          <p className={styles.noMarginBottom}>
+            <strong> Web Development Engineer at Liliana Electrodomesticos company. (Jun 2021 - Dec 2022): </strong>
             Developer. 
             In charge of designing, building, updating, improving, and maintaining a web application created from scratch. 
             Both frontend and backend. 
             An application that is used by hundreds of workers every day, in different areas of the company. 
             Mentoring and supervising two junior internship developers who collaborate with the app. 
           </p>
-          <p className={styles.workExpierence}>
+          <p className={styles.noMargin}>
             Automating and improving complex processes and data management 
             for the company, programming in Visual Basics For Applications
           </p>
-          <p className={styles.workExpierence}>
+          <p className={styles.noMargin}>
             More about Liliana and the Application in the <a href = {'#works'}>next section</a>
           </p>
           <p>
@@ -106,11 +119,11 @@ const Portfolio = () => {
       title: 'Volunteering',
       content: 
         <>
-          <p className={styles.workExpierence}>
+          <p className={styles.noMarginBottom}>
             <strong>Volunteer in the non-governmental organization "TECHO". (Mar 2018 - Present): </strong>
-              Builder and coordinator. <a href='https://techo.org' rel={'noreferrer'} target={'_blank'}>TECHO</a> is
-              an NGO dedicated to improving the poverty situation of people living in informal settlements.
-              Building, among other projects, small houses for homeless people in Rosario. 
+            Builder and coordinator. <a href='https://techo.org' rel={'noreferrer'} target={'_blank'}>TECHO</a> is
+            an NGO dedicated to improving the poverty situation of people living in informal settlements.
+            Building, among other projects, small houses for homeless people in Rosario. 
           </p>
           <p>
             <strong>Personal training experience living six months in the United States. (Jan - Jul 2012): </strong> 

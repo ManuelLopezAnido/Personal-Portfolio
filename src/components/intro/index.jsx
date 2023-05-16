@@ -1,26 +1,32 @@
 import styles from './intro.module.scss'
+import { useEffect , useRef, useState} from 'react'
 import { init } from 'ityped'
-import { useEffect , useRef } from 'react'
 import Fade from 'react-reveal/Fade';
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Loading from './loading';
 const Intro = ()=>{
+  const [imageLoaded, setImageLoaded] = useState(false);
   const textRef = useRef()
   useEffect (()=>{
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      startDelay: 1000,
+      startDelay: 3000,
       loop:false,
       strings: ['Frontend', 'Backend','Developer']
     });
   },[])
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  }
   return (
     <div className={styles.intro} id={'intro'}>
       <Fade big>
         <div className={styles.left}>
           <div className={styles.imgContainer}>
-            <img src={'assets/manu3Pic.png'} alt={''}/>
+            <img className={imageLoaded ? "" : styles.notVisible} src={'assets/manu3Pic.png'} alt={''} onLoad = {handleImageLoad} /> 
+            {!imageLoaded && <Loading className={styles.loading}/>}
           </div>
         </div>
       </Fade>
@@ -39,7 +45,6 @@ const Intro = ()=>{
           </div>
           <a href={'#portfolio'}>
             <img src={'assets/arrowDown.png'} alt={'ArrowDown'}/>
-            {/* //<ExpandMoreIcon className={styles.down} fontSize={'large'} color="black"/> */}
           </a>
         </div>
       </Fade>

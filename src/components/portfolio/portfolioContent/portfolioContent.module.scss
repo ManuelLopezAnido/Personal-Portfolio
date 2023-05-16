@@ -7,14 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-
   
   @include mobile {
     margin-top: 8%;
     height: 90%;
   }
-
+  
   .text{
     width: 90%;
     height: 90%;
@@ -24,6 +22,14 @@
         margin-top: 17px;
       }
     }
+    overflow: scroll;
+  }
+  //This is for hide srcollbar  on different browsers
+  .text::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .text::-ms-scrollbar {
+    display: none;
   }
 }
-  
