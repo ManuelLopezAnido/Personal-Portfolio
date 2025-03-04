@@ -4,10 +4,12 @@ import Topbar from './components/topbar'
 import Menu from './components/menu'
 import Intro from './components/intro';
 import Portfolio from './components/portfolio';
+import WorkAccenture from './components/works/accenture';
 import WorkLiliana from './components/works/liliana';
 import Testimonials from './components/testimonials';
 import Contact from './components/contact';
 import useClickOutside from './useClickOutside';
+
 
 function App() {
   const [topbarActive, setTopbarActive] = useState(false)
@@ -28,6 +30,7 @@ function App() {
       <div className={styles.sections}>
         <Intro/>
         <Portfolio/>
+        <WorkAccenture/>
         <WorkLiliana />
         <Testimonials/>
         <Contact/>
