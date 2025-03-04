@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import styles from './works.module.scss'
-import Fade from 'react-reveal/Fade';
 
 const WorkLilana = ()=>{
   const [currentSlider, setCurrentSlider] = useState (0)
@@ -65,7 +64,6 @@ const WorkLilana = ()=>{
   }
 
    return (
-    <Fade>
       <div className={styles.works} id={'works'}>
         <div className={styles.title}>
           <h1> My time in Liliana </h1>
@@ -110,7 +108,6 @@ const WorkLilana = ()=>{
           onClick={() => handleClick()}
         />
       </div>
-    </Fade>
   )
 }
 export default WorkLilana

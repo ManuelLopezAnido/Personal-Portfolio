@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import styles from './works.module.scss'
-import Fade from 'react-reveal/Fade';
 
 const WorkAccenture = ()=>{
   const [currentSlider, setCurrentSlider] = useState (0)
@@ -60,7 +59,6 @@ const WorkAccenture = ()=>{
   }
 
    return (
-    <Fade>
       <div className={styles.works} id={'works'}>
         <div className={styles.title}>
           <h1> My time in Accenture </h1>
@@ -105,7 +103,6 @@ const WorkAccenture = ()=>{
           onClick={() => handleClick()}
         />
       </div>
-    </Fade>
   )
 }
 export default WorkAccenture

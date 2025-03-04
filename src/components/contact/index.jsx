@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import styles from './contact.module.scss'
-import Slide from 'react-reveal/Slide';
-import Fade from 'react-reveal/Fade';
 
 const Contact = ()=>{
   const [messege, setMessege] = useState(false)
@@ -47,12 +45,12 @@ const Contact = ()=>{
 
   return (
     <div className={styles.contact} id={'contact'}>
-      <Slide left>
+     
         <div className={styles.left}>
           <img src='assets/shake.svg' alt=''/>
         </div>
-      </Slide>
-      <Fade>
+      
+      
         <div className={styles.right}>
           <h2>
             Contact.
@@ -68,7 +66,7 @@ const Contact = ()=>{
               {loading && <span className={styles.loading}> Loading... </span>}            
           </form>
         </div>
-      </Fade>
+      
     </div>
   )
 }

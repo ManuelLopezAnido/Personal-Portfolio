@@ -1,7 +1,6 @@
 import styles from './intro.module.scss'
 import { useEffect , useRef, useState} from 'react'
 import { init } from 'ityped'
-import Fade from 'react-reveal/Fade';
 import Loading from './loading';
 const Intro = ()=>{
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -22,15 +21,12 @@ const Intro = ()=>{
   }
   return (
     <div className={styles.intro} id={'intro'}>
-      <Fade big>
         <div className={styles.left}>
           <div className={styles.imgContainer}>
             <img className={imageLoaded ? "" : styles.notVisible} src={'assets/manu3Pic.png'} alt={''} onLoad = {handleImageLoad} /> 
             {!imageLoaded && <Loading className={styles.loading}/>}
           </div>
         </div>
-      </Fade>
-      <Fade big>
         <div className={styles.right}>
           <div className={styles.wrapper}>
             <h2>
@@ -47,7 +43,6 @@ const Intro = ()=>{
             <img src={'assets/arrowDown.png'} alt={'ArrowDown'}/>
           </a>
         </div>
-      </Fade>
     </div>
   )
 }

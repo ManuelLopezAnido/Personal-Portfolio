@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import styles from './testimonials.module.scss'
-import Fade from 'react-reveal/Fade';
 const Testimonials = ()=>{
   const [email, setEmail] = useState(false)
   const data = [
@@ -59,7 +58,6 @@ const Testimonials = ()=>{
     setTimeout(()=>{setEmail(false)},5000)
   }
   return (
-    <Fade>
       <div className={styles.testimonials} id={'testimonials'}>
         <div className={email ? styles.emailCopied : styles.nonVisibile}> 
           Email copied 
@@ -99,7 +97,6 @@ const Testimonials = ()=>{
           }
         </div>
       </div>
-    </Fade>
   )
 }
 export default Testimonials

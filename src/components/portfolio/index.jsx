@@ -3,7 +3,6 @@ import styles from './portfolio.module.scss'
 import PortfolioContent from './portfolioContent'
 import PortfolioList from './portfolioList'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import Fade from 'react-reveal/Fade';
 const Portfolio = () => {
 
   const [selected, setSelected] = useState('aboutme') 
@@ -162,7 +161,6 @@ const Portfolio = () => {
   ]
 
   return (
-    <Fade>
       <div className={styles.portfolio} id={'portfolio'}>
         <h1>
           Personal Information
@@ -190,7 +188,6 @@ const Portfolio = () => {
           />
         </div>
       </div>
-    </Fade>
   )
 }
 export default Portfolio

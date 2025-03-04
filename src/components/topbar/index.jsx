@@ -4,13 +4,11 @@ import PersonIcon from '@mui/icons-material/Person';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import Fade from 'react-reveal/Fade';
+//import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Topbar = (props)=>{
   
   return (
-    <Fade top>
       <div className={`${styles.topbar} ${props.barActive && styles.topbarActive}`}>
         <div className={styles.wrapper}>
           <div className= {styles.left}>
@@ -68,7 +66,6 @@ const Topbar = (props)=>{
           </div>
         </div>
       </div>
-    </Fade>
   )
 }
 export default Topbar
