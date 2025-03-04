@@ -53,7 +53,7 @@ const Portfolio = () => {
               <img  src={'assets/logoReact.png'} alt={''}/>
             </div>
             <div className={styles.logo}>
-              <img  src={'assets/logoNodejs.png'} alt={''}/>
+              <img  src={'assets/logoNode.png'} alt={''}/>
             </div>
             <div className={styles.logo}>
               <img  src={'assets/logoTypescript.png'} alt={''}/>
