@@ -54,9 +54,9 @@ const Topbar = (props)=>{
               <a href='https://www.linkedin.com/in/manuel-lopez-anido-677a89b9/' rel={'noreferrer'} target={'_blank'}>
                 <LinkedInIcon className={styles.icon}/>
               </a>
-              <a href='https://www.twitter.com' rel={'noreferrer'} target={'_blank'}>
+              {/* <a href='https://www.twitter.com' rel={'noreferrer'} target={'_blank'}>
                 <TwitterIcon className={styles.icon}/>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className= {styles.right}>

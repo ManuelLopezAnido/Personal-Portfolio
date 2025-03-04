@@ -48,7 +48,7 @@ const WorkAccenture = ()=>{
         </>
       ,
       img: "assets/galicia-office.jpg",
-      link: "https://wsec06.bancogalicia.com.ar/",
+      link: "https://play.google.com/store/apps/details?id=com.galicia.otp",
       span: "Galicia Office"
     },
   ]

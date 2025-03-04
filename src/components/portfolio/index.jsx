@@ -13,13 +13,13 @@ const Portfolio = () => {
       title: 'About me',
       content: 
       <>
-        <p> My name is Manuel Lopez Anido, I’m 27 years and I’m an Industrial Engineer and Web Developer from Rosario, Argentina.</p> 
-        <p> I have been working for almost 3 years as an engineer and developer. Building, improving, and
+        <p> My name is Manuel Lopez Anido, I’m {new Date().getFullYear() - 1996} years old and I’m an Industrial Engineer and Web Developer from Rosario, Argentina.</p> 
+        <p> I have been working for over 4 years as an engineer and developer. Building, improving, and
             maintaining entire web applications for different large companies. As an industrial engineer,
             I am qualified to analyze, improve, automate and optimize the performance of processes and systems. 
             I'm trained to work in diverse industries including services and technology.</p>
         <p> I especially like programming and development, 
-            so I have specialized in these areas during my work experiences.
+            so I have specialized in these areas throughout my career.
             I have experience working on the frontend, backend, data management and automation for important companies in Argentina.</p>
         <p> I'm a very optimistic, curious, and responsible person who enjoys working in teams. 
             I’m motivated by learning new knowledge, 
@@ -39,8 +39,8 @@ const Portfolio = () => {
           <p><strong>Academic Degree:</strong> Industrial Engineer at Universidad Nacional de Rosario (UNR). (2014-2022).</p>
           <p className={styles.webAppT}>Web Developer:</p> 
           <p className={styles.webAppP}> 
-            Frontend:  <i> Typescript, React, Next.js, Redux, Sass.</i> <br/> 
-            Backend: <i> Node.js, Express, Nest.js, MongoDB.</i> <br/> 
+            Frontend:  <i> Typescript, React, Next.js, TanStack Query, Zustand, Tailwind CSS, Sass.</i> <br/> 
+            Backend: <i> Node.js, Express, Nest.js, MongoDB, SQL, Zod.</i> <br/> 
             Version control: <i>Git, GitHub.</i>
           </p>
           <p>I am highly proficient in Microsoft automations using <i>Visual Basic for Application</i></p>
@@ -77,20 +77,18 @@ const Portfolio = () => {
       content:
         <>
           <p className={styles.noMarginBottom}>
-            <strong> Web Development Engineer at Accenture. (Dec 2022 – Present): </strong>
-            Accenture Web Developer. Currently assigned to "Banco Galicia", the most important Accenture client in
-            Argentina.
-            Working in an Agile Team responsible for building and maintaining critical web applications that support
-            the bank's day-to-day operations.
+            <strong> Senior Web Development Engineer at Accenture. (Dec 2022 – Present): </strong>
+            Currently assigned to "Banco Galicia", the most important Accenture client in
+            Argentina. Working in an Agile Team, responsible for building and maintaining critical web applications
+            that support the bank's day-to-day operations.
           </p>
           <p className={styles.noMargin}>
-            Developing on the frontend using Next.js and on the backend using Nest.js, under the microservice
-            architecture. 
+          Developing the frontend using Next.js and the backend using Nest.js, following the microservice
+          architecture.
           </p>
           <p className={styles.noMarginBottom}>
             <strong> Web Development Engineer at Liliana Electrodomesticos company. (Jun 2021 - Dec 2022): </strong>
-            Developer. 
-            In charge of designing, building, updating, improving, and maintaining a web application created from scratch. 
+            Developer in charge of designing, building, updating, improving, and maintaining a web application created from scratch. 
             Both frontend and backend. 
             An application that is used by hundreds of workers every day, in different areas of the company. 
             Mentoring and supervising two junior internship developers who collaborate with the app. 
@@ -141,20 +139,22 @@ const Portfolio = () => {
           <p>
             <strong>Spanish: </strong>Native speaker
           </p>
-          <p>
-            <strong>English: </strong>Advanced Level. 
-            Cambridge First Certificate English – IATEL 2014. Fluent Speaker
+          <p className={styles.noMarginBottom}>
+            <strong>English: </strong>Fluent Speaker. 
           </p>
+          <p className={styles.noMargin}> &nbsp;&nbsp;&nbsp;&nbsp; • Cambridge First Certificate in English (FCE) – Grade B, Level B2 – 2014. </p>
+          <p className={styles.noMargin}> &nbsp;&nbsp;&nbsp;&nbsp; • TOEFL iBT – 98 out of 120, Level C1 – 2025. </p>
+         
           <p>
-            <strong>German: </strong>Inicial. 3 years studying at Universidad Nacional de Rosario 
+            <strong>German: </strong>Basic. 3 years studying at Universidad Nacional de Rosario 
           </p>
           <p>
             <strong>Hobbies: </strong>
-            In my free time, I enjoy being with friends and practicing sports. 
-            I have played water polo for my university team since 2015. 
-            I also enjoy playing the board game of GO and Chess. 
-            On weekends I like to go paddling on the river in my kayak, 
-            watch Formula 1 races, and play tennis with my girlfriend.
+            In my free time, I enjoy spending time with friends and practicing sports. 
+            I played water polo for my university team for several years and currently do CrossFit. 
+            I also enjoy playing Go and Chess, as well as taking on programming challenges. 
+            On weekends, I like kayaking on the Parana River in Rosario, watching Formula 1 races, 
+            and playing tennis with my girlfriend.
           </p>
         </>
     },

@@ -16,6 +16,18 @@ const Testimonials = ()=>{
         "Excellent learning new things in a short time, applying the knowledge in his day-to-day work life..."
       </>
     },
+      {
+      name: 'Bárbara García',
+      position: 'Product Owner in Galicia',
+      image:'picBarbi.jpg',
+      email: 'barbara.m.garcia@bancogalicia.com.ar',
+      linkedin: 'https://www.linkedin.com/in/b%C3%A1rbara-garc%C3%ADa-57a4278a/',
+      feature: false,
+      testimonial: 
+        <>
+         "Always in a good mood and willing to help others. His colleagues are very happy with him..."
+        </>
+    },
     {
       name: 'Heraldo Gerber',
       position: 'Liliana\'s IT Manager',
@@ -26,18 +38,6 @@ const Testimonials = ()=>{
       testimonial: 
         <>
           "He is comfortable with changes. Sees difficulties as challenges to overcome..."
-        </>
-    },
-    {
-      name: 'Vanina Pintos',
-      position: 'Liliana\'s Production Manger',
-      image:'picVanina.jpg',
-      email: 'vpintos@liliana.com.ar ',
-      linkedin: 'https://www.linkedin.com/in/vanina-pintos-66ab3418/',
-      feature: false,
-      testimonial: 
-        <>
-         "Always in a good mood and willing to help others. His colleagues are very happy with him..."
         </>
     },
     {
