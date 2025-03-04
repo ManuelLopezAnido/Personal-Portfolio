@@ -85,6 +85,9 @@ const Portfolio = () => {
           Developing the frontend using Next.js and the backend using Nest.js, following the microservice
           architecture.
           </p>
+          <p className={styles.noMargin}>
+            More about Accenture and Galicia Bank in the <a href = {'#works'}>next section</a>
+          </p>
           <p className={styles.noMarginBottom}>
             <strong> Web Development Engineer at Liliana Electrodomesticos company. (Jun 2021 - Dec 2022): </strong>
             Developer in charge of designing, building, updating, improving, and maintaining a web application created from scratch. 
@@ -97,7 +100,7 @@ const Portfolio = () => {
             for the company, programming in Visual Basics For Applications
           </p>
           <p className={styles.noMargin}>
-            More about Liliana and the Application in the <a href = {'#works'}>next section</a>
+            More about Liliana and the Application in the <a href = {'#worksLiliana'}>next section</a>
           </p>
           <p>
             <strong>Intern for the Municipality of Rosario. (Mar 2019 - Oct 2020): </strong>

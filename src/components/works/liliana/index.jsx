@@ -64,7 +64,7 @@ const WorkLilana = ()=>{
   }
 
    return (
-      <div className={styles.works} id={'works'}>
+      <div className={styles.works} id={'worksLiliana'}>
         <div className={styles.title}>
           <h1> My time in Liliana </h1>
         </div>
