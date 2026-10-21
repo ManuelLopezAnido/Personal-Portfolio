@@ -68,7 +68,7 @@ const Portfolio = () => {
         <>
           <p><strong>Degrees:</strong></p>
           <p className={styles.degree}><strong>Master of Science in Data Science and Engineering</strong> <br/> University of Maine, USA (Aug 2025 – Expected May 2027) </p> 
-          <p className={styles.degree}><strong>Graduate Certificate in Engineering Applications of AI</strong> <br/> University of Maine, USA. (Aug 2025 – Present)</p>
+          <p className={styles.degree}><strong>Graduate Certificate in Engineering Applications of AI</strong> <br/> University of Maine, USA. (Aug 2025 – Expected May 2027)</p>
           <p className={styles.degree}><strong>Industrial Engineer</strong> <br/> Universidad Nacional de Rosario. (Mar 2014- Aug 2022)</p>
           <p className={styles.webAppT}>Technical Skills:</p> 
           <p className={styles.degree}>
