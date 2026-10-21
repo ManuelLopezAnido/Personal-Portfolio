@@ -56,6 +56,9 @@
       color: black;
       font-weight: bold;
     }
+    .degree {
+    margin-left: 20px;  
+    }
     .webAppT{
       font-weight: bold;
       margin-bottom: 0px;
@@ -92,68 +95,116 @@
         margin-left: -3px;
       }
     }
-    .logoConteiner{
-      position: relative;
+    .logoConteiner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    column-gap: 45px;
+    row-gap: 0px;
+
+    width: 100%;
+    max-width: 850px;
+    margin: -1% auto 0;
+
+    .logo {
+      width: 125px;
+      height: 80px;
+
       display: flex;
-      justify-content: space-around;
-      height: 10%;
-      margin-top: 5%;
+      align-items: center;
+      justify-content: center;
 
-      @include mobile {
-        flex-direction: column;
-        align-items: center;
-        margin-top: -5%;
-        height: 35vh;
+       &:nth-child(n+6) {
+
+        img {
+          width: 80%;
+          height: 80%;
+        }
       }
 
-      .logo{
+      img {
+        width: 100%;
         height: 100%;
-        img{
-          height:100%;
-          @include mobile{
-            margin-top: 0;
-          }
-        }
-        @include mobile{
-          height: 12%;
-        }
+        object-fit: contain;
       }
+    }
 
-      :nth-child(2){
-        height: 80%;
-        position: relative; /* enable relative positioning */
-        top: 5%; /* move 4th child up by 10px */
-        @include mobile{
-          height: 10%;
-          position: relative; /* enable relative positioning */
-          top: 0%; /* move 4th child up by 10px */
-        }
-      }
-      :nth-child(3){
-        height: 120%;
-        @include mobile{
-          height: 15%;
-        }
-      }
-      :nth-child(4){
-        height: 120%;
-        
-        @include mobile{
-          height: 15%;
-        }
-      }
-      :nth-child(5){
-        height: 115%;
-        @include mobile{
-          height: 15%;
-        }
-      }
-      :nth-child(6){
-        height: 105%;
-        @include mobile{
-          height: 12%;
-        }
+    @include mobile {
+      column-gap: 15px;
+      row-gap: 20px;
+
+      .logo {
+        width: 85px;
+        height: 55px;
       }
     }
   }
+  }
 }
+    // .logoConteiner{
+    //   position: relative;
+    //   display: flex;
+    //   justify-content: space-around;
+    //   height: 10%;
+    //   margin-top: 5%;
+
+    //   @include mobile {
+    //     flex-direction: column;
+    //     align-items: center;
+    //     margin-top: -5%;
+    //     height: 35vh;
+    //   }
+
+    //   .logo{
+    //     height: 100%;
+    //     img{
+    //       height:100%;
+    //       @include mobile{
+    //         margin-top: 0;
+    //       }
+    //     }
+    //     @include mobile{
+    //       height: 12%;
+    //     }
+    //   }
+
+    //   :nth-child(2){
+    //     height: 80%;
+    //     position: relative; /* enable relative positioning */
+    //     top: 5%; /* move 4th child up by 10px */
+    //     @include mobile{
+    //       height: 10%;
+    //       position: relative; /* enable relative positioning */
+    //       top: 0%; /* move 4th child up by 10px */
+    //     }
+    //   }
+    //   :nth-child(3){
+    //     height: 120%;
+    //     @include mobile{
+    //       height: 15%;
+    //     }
+    //   }
+    //   :nth-child(4){
+    //     height: 120%;
+        
+    //     @include mobile{
+    //       height: 15%;
+    //     }
+    //   }
+    //   :nth-child(5){
+    //     height: 115%;
+    //     @include mobile{
+    //       height: 15%;
+    //     }
+    //   }
+    //   :nth-child(6){
+    //     height: 105%;
+    //     @include mobile{
+    //       height: 12%;
+    //     }
+    //  }
+    //}

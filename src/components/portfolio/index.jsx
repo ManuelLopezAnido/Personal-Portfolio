@@ -7,53 +7,95 @@ const Portfolio = () => {
 
   const [selected, setSelected] = useState('aboutme') 
   const list = [
-    {
-      id:'aboutme',
-      title: 'About me',
-      content: 
-      <>
-        <p> My name is Manuel Lopez Anido, I’m {new Date().getFullYear() - 1996} years old and I’m an Industrial Engineer and Web Developer from Rosario, Argentina.</p> 
-        <p> I have been working for over 4 years as an engineer and developer. Building, improving, and
-            maintaining entire web applications for different large companies. As an industrial engineer,
-            I am qualified to analyze, improve, automate and optimize the performance of processes and systems. 
-            I'm trained to work in diverse industries including services and technology.</p>
-        <p> I especially like programming and development, 
-            so I have specialized in these areas throughout my career.
-            I have experience working on the frontend, backend, data management and automation for important companies in Argentina.</p>
-        <p> I'm a very optimistic, curious, and responsible person who enjoys working in teams. 
-            I’m motivated by learning new knowledge, 
-            and I’m always striving to expand my professional skill set.</p> 
-        <p className={styles.ubication}> 
-          <a href={'https://goo.gl/maps/VhACAxURPFLEAzNa9'} rel={'noreferrer'} target={'_blank'}> 
-            <LocationOnIcon/> <span>Rosario, Argentina</span>
-          </a>
-        </p>
-      </>
-    },
+   {
+  id: 'aboutme',
+  title: 'About Me',
+  content:
+  <>
+    <p>
+      My name is Manuel Lopez Anido. I'm an Industrial Engineer from Argentina,
+      currently based in Maine, USA.
+    </p>
+
+    <p>
+      I'm pursuing a Master's degree in Data Science and Engineering
+      and a Graduate Certificate in Engineering Applications of Artificial
+      Intelligence at the University of Maine.
+    </p>
+
+    <p>
+      I have over five years of professional experience in engineering and
+      software development, building, improving, and maintaining web applications
+      for major companies. My background in Industrial Engineering has given me
+      a strong foundation in analyzing, optimizing, and automating processes
+      and systems across different industries.
+    </p>
+
+    <p>
+      I am also a Teaching Assistant in the Mathematics Department at the
+      University of Maine, where I lead recitation sessions in Calculus,
+      Linear Algebra, and Differential Equations.
+    </p>
+    <p>
+      Throughout my career, I've developed a strong interest in programming
+      and software development, gaining hands-on experience in frontend and
+      backend development, data management, and process automation.
+      More recently, I've been expanding my expertise in Data Science,
+      Machine Learning, and Artificial Intelligence.
+    </p>
+    <p>
+      I'm an optimistic, curious, and responsible person who enjoys working
+      in teams, tackling new challenges, and continuously learning.
+      I'm seeking full-time opportunities in AI, Data Science, and Software Engineering, with availability starting in May 2027
+    </p>
+
+    <p className={styles.ubication}>
+      <a
+        href={'https://maps.app.goo.gl/5r1VfruQrJQhFu6Z8'}
+        rel={'noreferrer'}
+        target={'_blank'}
+      >
+        <LocationOnIcon/>
+        <span>University of Maine, Maine, USA</span>
+      </a>
+    </p>
+  </>
+},
     {
       id:' studiesandknowledge',
       title: ' Studies and Knowledge',
       content:
         <>
-          <p><strong>Academic Degree:</strong> Industrial Engineer at Universidad Nacional de Rosario (UNR). (2014-2022).</p>
-          <p className={styles.webAppT}>Web Developer:</p> 
-          <p className={styles.webAppP}> 
-            Frontend:  <i> Typescript, React, Next.js, TanStack Query, Zustand, Tailwind CSS, Sass.</i> <br/> 
-            Backend: <i> Node.js, Express, Nest.js, MongoDB, SQL, Zod.</i> <br/> 
-            Version control: <i>Git, GitHub.</i>
-          </p>
-          <p>I am highly proficient in Microsoft automations using <i>Visual Basic for Application</i></p>
-          <p>
-            I also have industry-relevant knowledge of Blockchains. 
-            I researched this topic in-depth for my final engineering project: 
-            entitled “Blockchains and Their Applications in Industries.”
+          <p><strong>Degrees:</strong></p>
+          <p className={styles.degree}><strong>Master of Science in Data Science and Engineering</strong> <br/> University of Maine, USA (Aug 2025 – Expected May 2027) </p> 
+          <p className={styles.degree}><strong>Graduate Certificate in Engineering Applications of AI</strong> <br/> University of Maine, USA. (Aug 2025 – Present)</p>
+          <p className={styles.degree}><strong>Industrial Engineer</strong> <br/> Universidad Nacional de Rosario. (Mar 2014- Aug 2022)</p>
+          <p className={styles.webAppT}>Technical Skills:</p> 
+          <p className={styles.degree}>
+            <p className={styles.webAppP}> 
+              Data Science & Deep Learning: <i> Python, Pandas, NumPy, PyTorch, Power BI.</i> <br/>
+              Frontend:  <i> Typescript, React, Next.js, TanStack Query, Zustand, Tailwind CSS, Sass.</i> <br/> 
+              Backend: <i> Node.js, Express, Nest.js, MongoDB, SQL, Zod.</i> <br/> 
+            </p>
+            <p>I am proficient in Microsoft automations using <i>Visual Basic for Application.</i> I also have industry-relevant knowledge of <i>Blockchains.</i> 
+              I researched this topic in-depth for my final engineering project: 
+              entitled “Blockchains and Their Applications in Industries.”</p>
           </p>
           <div className={styles.logoConteiner}>
             <div className={styles.logo}>
-              <img  src={'assets/logoReact.png'} alt={''}/>
+              <img  src={'assets/logoPython.png'} alt={''}/>
             </div>
             <div className={styles.logo}>
-              <img  src={'assets/logoNode.png'} alt={''}/>
+              <img  src={'assets/logoPyTorch.png'} alt={''}/>
+            </div>
+            <div className={styles.logo}>
+              <img  src={'assets/logoPandas.png'} alt={''}/>
+            </div>
+            <div className={styles.logo}>
+              <img  src={'assets/logoReact2.png'} alt={''}/>
+            </div>
+            <div className={styles.logo}>
+              <img  src={'assets/logoNode2.png'} alt={''}/>
             </div>
             <div className={styles.logo}>
               <img  src={'assets/logoTypescript.png'} alt={''}/>
@@ -76,7 +118,12 @@ const Portfolio = () => {
       content:
         <>
           <p className={styles.noMarginBottom}>
-            <strong> Senior Web Development Engineer at Accenture. (Dec 2022 – Present): </strong>
+            <strong> Teaching Assistant, University of Maine, Department of Mathematics. (Sep 2025 – May 2027): </strong>
+            Performed recitations, grading, lecture support, and Math Lab oﬃce hours across the following classes:
+            Calculus III, Diﬀerential Equations, Linear Algebra, and Precalculus.
+          </p>
+          <p className={styles.noMarginBottom}>
+            <strong> Senior Web Development Engineer at Accenture. (Dec 2022 – Agu 2025): </strong>
             Currently assigned to "Banco Galicia", the most important Accenture client in
             Argentina. Working in an Agile Team, responsible for building and maintaining critical web applications
             that support the bank's day-to-day operations.
@@ -114,28 +161,9 @@ const Portfolio = () => {
           </p>
         </>
     },
-    {
-      id:'otherexperiences',
-      title: 'Volunteering',
-      content: 
-        <>
-          <p className={styles.noMarginBottom}>
-            <strong>Volunteer in the non-governmental organization "TECHO". (Mar 2018 - Present): </strong>
-            Builder and coordinator. <a href='https://techo.org' rel={'noreferrer'} target={'_blank'}>TECHO</a> is
-            an NGO dedicated to improving the poverty situation of people living in informal settlements.
-            Building, among other projects, small houses for homeless people in Rosario. 
-          </p>
-          <p>
-            <strong>Personal training experience living six months in the United States. (Jan - Jul 2012): </strong> 
-              Completing the 4th year of high school in Orono, Maine.
-              This experience gave me, in addition to a great ability to understand and speak English,
-              a strong sense of independence and ease with people from different backgrounds and cultures.
-          </p>
-        </>
-    },
-    {
+     {
       id:'languages',
-      title: 'Languages and Hobbies',
+      title: 'Languages',
       content: 
         <>
           <p>
@@ -150,16 +178,31 @@ const Portfolio = () => {
           <p>
             <strong>German: </strong>Basic. 3 years studying at Universidad Nacional de Rosario 
           </p>
+        
+        </>
+    },
+    {
+      id:'otherexperiences',
+      title: 'Beyond Engineering',
+      content: 
+        <>
+          <p className={styles.noMarginBottom}>
+            <strong>Volunteer in the non-governmental organization "TECHO". (Mar 2018 - Oct 2022): </strong>
+            Builder and coordinator. <a href='https://techo.org' rel={'noreferrer'} target={'_blank'}>TECHO</a> is
+            an NGO dedicated to improving the poverty situation of people living in informal settlements.
+            Building, among other projects, emergency housing. 
+          </p>
           <p>
             <strong>Hobbies: </strong>
-            In my free time, I enjoy spending time with friends and practicing sports. 
-            I played water polo for my university team for several years and currently do CrossFit. 
+            In my free time, I enjoy spending time with friends and staying active. 
+            I played water polo for my university team for several years and currently play at UMaine. 
             I also enjoy playing Go and Chess, as well as taking on programming challenges. 
-            On weekends, I like kayaking on the Parana River in Rosario, watching Formula 1 races, 
-            and playing tennis with my girlfriend.
+            On weekends, I like go hiking in Maine, watching Formula 1 races, 
+            and go running with my girlfriend.
           </p>
         </>
     },
+   
 
   ]
 

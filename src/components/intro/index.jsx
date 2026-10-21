@@ -12,7 +12,7 @@ const Intro = ()=>{
       backSpeed: 60,
       startDelay: 3000,
       loop:false,
-      strings: ['Frontend', 'Backend','Developer']
+      strings:["Data Analyst","AI Specialist", "Developer"]
     });
   },[])
 
