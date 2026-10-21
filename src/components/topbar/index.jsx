@@ -18,7 +18,7 @@ const Topbar = (props)=>{
             <div className={styles.itemContainer}>
               <PersonIcon className={styles.icon}/>
               <span>
-                0341 153 240353
+                +1 (207) 275 8323
               </span>
             </div>
             <div className= {styles.itemContainer}>
